@@ -150,196 +150,21 @@
 
                         <tbody>
                             <!-- Mois de janvier -->
-                            <tr>
-                                <td>JANVIER</td>
-                                <?php foreach ($prog_jan as $prog) {
-                                        echo '<td>' . $prog['id'] . '</td>';
-                                        echo '<td>' . $prog['mission'] . '</td>';
-                                        echo '<td>' . $prog['details_mission'] . '</td>';
-                                        echo '<td>' . $prog['location'] . '</td>';
-                                        echo '<td>' . $prog['available_beds'] . '</td>';
-                                        echo '<td>' . $prog['comments'] . '</td>';
-                                        echo '<tr></tr>';
-                                        echo '<td></td>';
-                                    }
-                                ?>
-                            </tr>
-
-                            <!-- Mois de février -->
-                            <tr>
-                                <td>FEVRIER</td>
-                                <?php foreach ($prog_feb as $prog) {
-                                        echo '<td>' . $prog['id'] . '</td>';
-                                        echo '<td>' . $prog['mission'] . '</td>';
-                                        echo '<td>' . $prog['details_mission'] . '</td>';
-                                        echo '<td>' . $prog['location'] . '</td>';
-                                        echo '<td>' . $prog['available_beds'] . '</td>';
-                                        echo '<td>' . $prog['comments'] . '</td>';
-                                        echo '<tr></tr>';
-                                        echo '<td></td>';
-                                    }
-                                ?>
-                            </tr>
-
-                            <!-- Mois de mars -->
-                            <tr>
-                                <td>MARS</td>
-                                <?php foreach ($prog_mar as $prog) {
-                                        echo '<td>' . $prog['id'] . '</td>';
-                                        echo '<td>' . $prog['mission'] . '</td>';
-                                        echo '<td>' . $prog['details_mission'] . '</td>';
-                                        echo '<td>' . $prog['location'] . '</td>';
-                                        echo '<td>' . $prog['available_beds'] . '</td>';
-                                        echo '<td>' . $prog['comments'] . '</td>';
-                                        echo '<tr></tr>';
-                                        echo '<td></td>';
-                                    }
-                                ?>
-                            </tr>
-
-                            <!-- Mois d'avril -->
-                            <tr>
-                                <td>AVRIL</td>
-                                <?php foreach ($prog_apr as $prog) {
-                                        echo '<td>' . $prog['id'] . '</td>';
-                                        echo '<td>' . $prog['mission'] . '</td>';
-                                        echo '<td>' . $prog['details_mission'] . '</td>';
-                                        echo '<td>' . $prog['location'] . '</td>';
-                                        echo '<td>' . $prog['available_beds'] . '</td>';
-                                        echo '<td>' . $prog['comments'] . '</td>';
-                                        echo '<tr></tr>';
-                                        echo '<td></td>';
-                                    }
-                                ?>
-                            </tr>
-                            
-                            <!-- Mois de mai -->
-                            <tr>
-                                <td>MAI</td>
-                                <?php foreach ($prog_may as $prog) {
-                                        echo '<td>' . $prog['id'] . '</td>';
-                                        echo '<td>' . $prog['mission'] . '</td>';
-                                        echo '<td>' . $prog['details_mission'] . '</td>';
-                                        echo '<td>' . $prog['location'] . '</td>';
-                                        echo '<td>' . $prog['available_beds'] . '</td>';
-                                        echo '<td>' . $prog['comments'] . '</td>';
-                                        echo '<tr></tr>';
-                                        echo '<td></td>';
-                                    }
-                                ?>
-                            </tr>
-                            
-                            <!-- Mois de juin -->
-                            <tr>
-                                <td>JUIN</td>
-                                <?php foreach ($prog_jun as $prog) {
-                                        echo '<td>' . $prog['id'] . '</td>';
-                                        echo '<td>' . $prog['mission'] . '</td>';
-                                        echo '<td>' . $prog['details_mission'] . '</td>';
-                                        echo '<td>' . $prog['location'] . '</td>';
-                                        echo '<td>' . $prog['available_beds'] . '</td>';
-                                        echo '<td>' . $prog['comments'] . '</td>';
-                                        echo '<tr></tr>';
-                                        echo '<td></td>';
-                                    }
-                                ?>
-                            </tr>
-
-                            <!-- Mois de juillet -->
-                            <tr>
-                                <td>JUILLET</td>
-                                <?php foreach ($prog_jul as $prog) {
-                                        echo '<td>' . $prog['id'] . '</td>';
-                                        echo '<td>' . $prog['mission'] . '</td>';
-                                        echo '<td>' . $prog['details_mission'] . '</td>';
-                                        echo '<td>' . $prog['location'] . '</td>';
-                                        echo '<td>' . $prog['available_beds'] . '</td>';
-                                        echo '<td>' . $prog['comments'] . '</td>';
-                                        echo '<tr></tr>';
-                                        echo '<td></td>';
-                                    }
-                                ?>
-                            </tr>
-
-                            <!-- Mois d'août -->
-                            <tr>
-                                <td>AOUT</td>
-                                <?php foreach ($prog_aug as $prog) {
-                                        echo '<td>' . $prog['id'] . '</td>';
-                                        echo '<td>' . $prog['mission'] . '</td>';
-                                        echo '<td>' . $prog['details_mission'] . '</td>';
-                                        echo '<td>' . $prog['location'] . '</td>';
-                                        echo '<td>' . $prog['available_beds'] . '</td>';
-                                        echo '<td>' . $prog['comments'] . '</td>';
-                                        echo '<tr></tr>';
-                                        echo '<td></td>';
-                                    }
-                                ?>
-                            </tr>
-
-                            <!-- Mois de septembre -->
-                            <tr>
-                                <td>SEPTEMBRE</td>
-                                <?php foreach ($prog_sep as $prog) {
-                                        echo '<td>' . $prog['id'] . '</td>';
-                                        echo '<td>' . $prog['mission'] . '</td>';
-                                        echo '<td>' . $prog['details_mission'] . '</td>';
-                                        echo '<td>' . $prog['location'] . '</td>';
-                                        echo '<td>' . $prog['available_beds'] . '</td>';
-                                        echo '<td>' . $prog['comments'] . '</td>';
-                                        echo '<tr></tr>';
-                                        echo '<td></td>';
-                                    }
-                                ?>
-                            </tr>
-
-                            <!-- Mois d'octobre -->
-                            <tr>
-                                <td>OCTOBRE</td>
-                                <?php foreach ($prog_oct as $prog) {
-                                        echo '<td>' . $prog['id'] . '</td>';
-                                        echo '<td>' . $prog['mission'] . '</td>';
-                                        echo '<td>' . $prog['details_mission'] . '</td>';
-                                        echo '<td>' . $prog['location'] . '</td>';
-                                        echo '<td>' . $prog['available_beds'] . '</td>';
-                                        echo '<td>' . $prog['comments'] . '</td>';
-                                        echo '<tr></tr>';
-                                        echo '<td></td>';
-                                    }
-                                ?>
-                            </tr>
-
-                            <!-- Mois de novembre -->
-                            <tr>
-                                <td>NOVEMBRE</td>
-                                <?php foreach ($prog_nov as $prog) {
-                                        echo '<td>' . $prog['id'] . '</td>';
-                                        echo '<td>' . $prog['mission'] . '</td>';
-                                        echo '<td>' . $prog['details_mission'] . '</td>';
-                                        echo '<td>' . $prog['location'] . '</td>';
-                                        echo '<td>' . $prog['available_beds'] . '</td>';
-                                        echo '<td>' . $prog['comments'] . '</td>';
-                                        echo '<tr></tr>';
-                                        echo '<td></td>';
-                                    }
-                                ?>
-                            </tr>
-
-                            <!-- Mois de décembre -->
-                            <tr>
-                                <td>DECEMBRE</td>
-                                <?php foreach ($prog_dec as $prog) {
-                                        echo '<td>' . $prog['id'] . '</td>';
-                                        echo '<td>' . $prog['mission'] . '</td>';
-                                        echo '<td>' . $prog['details_mission'] . '</td>';
-                                        echo '<td>' . $prog['location'] . '</td>';
-                                        echo '<td>' . $prog['available_beds'] . '</td>';
-                                        echo '<td>' . $prog['comments'] . '</td>';
-                                        echo '<tr></tr>';
-                                        echo '<td></td>';
-                                    }
-                                ?>
-                            </tr>
+                            <?php foreach ($month_prog as $month_name => $progs): ?>
+                                <tr>
+                                    <td><?= $month_name; ?></td>
+                                    <?php foreach ($progs as $prog):?>
+                                        <td><?= $prog['id']; ?></td>
+                                        <td><?= $prog['mission']; ?></td>
+                                        <td><?= $prog['details_mission']; ?></td>
+                                        <td><?= $prog['location']; ?></td>
+                                        <td><?= $prog['available_beds']; ?></td>
+                                        <td><?= $prog['comments']; ?></td>
+                                        <tr></tr>
+                                        <td></td>
+                                    <?php endforeach; ?>
+                                </tr>
+                            <?php endforeach; ?>    
                         </tbody>
                     </table>
                 </div>
