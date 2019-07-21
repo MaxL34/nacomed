@@ -58,19 +58,34 @@ function reportCom($article_id, $com_id) {
 
 function displayOnBoard() {
     try {
-        $progMayManager = new App\Program\ProgramManager();
-        $prog_jan = $progMayManager->getProg_jan();
-        $prog_feb = $progMayManager->getProg_feb();
-        $prog_mar = $progMayManager->getProg_mar();
-        $prog_apr = $progMayManager->getProg_apr();
-        $prog_may = $progMayManager->getProg_may();
-        $prog_jun = $progMayManager->getProg_jun();
-        $prog_jul = $progMayManager->getProg_jul();
-        $prog_aug = $progMayManager->getProg_aug();
-        $prog_sep = $progMayManager->getProg_sep();
-        $prog_oct = $progMayManager->getProg_oct();
-        $prog_nov = $progMayManager->getProg_nov();
-        $prog_dec = $progMayManager->getProg_dec();
+        $progManager = new App\Program\ProgramManager();
+        
+        $month_prog = [
+            "JANVIER" => $progManager->getProg_jan(),
+            "FEVRIER" => $progManager->getProg_feb(),
+            "MARS" => $progManager->getProg_mar(),
+            "AVRIL" => $progManager->getProg_apr(),
+            "MAI" => $progManager->getProg_may(),
+            "JUIN" => $progManager->getProg_jun(),
+            "JUILLET" => $progManager->getProg_jul(),
+            "AOUT" => $progManager->getProg_aug(),
+            "SEPTEMBRE" => $progManager->getProg_sep(),
+            "OCTOBRE" => $progManager->getProg_oct(),
+            "NOVEMBRE" => $progManager->getProg_nov(),
+            "DECEMBRE" => $progManager->getProg_dec() 
+        ];
+        /*$prog_jan = $progManager->getProg_jan();
+        $prog_feb = $progManager->getProg_feb();
+        $prog_mar = $progManager->getProg_mar();
+        $prog_apr = $progManager->getProg_apr();
+        $prog_may = $progManager->getProg_may();
+        $prog_jun = $progManager->getProg_jun();
+        $prog_jul = $progManager->getProg_jul();
+        $prog_aug = $progManager->getProg_aug();
+        $prog_sep = $progManager->getProg_sep();
+        $prog_oct = $progManager->getProg_oct();
+        $prog_nov = $progManager->getProg_nov();
+        $prog_dec = $progManager->getProg_dec();*/
 
         $mapManager = new App\Map\MapManager();
         $mapEvents = $mapManager->displayEvents();
