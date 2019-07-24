@@ -62,4 +62,3 @@
 <script src="./js/scroll_nav.js"></script>
 <script src="./js/editArticle.js"></script>
 <script src="./js/controllers/editArticle.js"></script>
-
