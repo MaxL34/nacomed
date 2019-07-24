@@ -46,8 +46,6 @@
     </div>
 </div>
 
-<!-- <?php include('./config.php'); $gmap_script = '<script async defer src="https://maps.googleapis.com/maps/api/js?key=' . $apiKey . '&callback=initMap"></script>'; ?> -->
-
 <?php $content = ob_get_clean(); ?>
 <?php require('public/views/layoutBack.php'); ?>
 
