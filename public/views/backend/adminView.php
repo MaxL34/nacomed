@@ -17,30 +17,14 @@
     </div>
 
     <div class="row">
-        <div class="col-lg-4 text-center">
-            <header>
-                <h4>Gestion des news (articles)</h4>
-                    <button id="news-mgmt">Gérer</button>
-            </header>
-        </div>
-
-        <div class="col-lg-4 text-center">
+        <div class="col-lg-6 text-center">
             <header>
                 <h4>Gestion de la map</h4>
                     <button id="map-mgmt">Gérer</button>
             </header>
         </div>
 
-        <div class="col-lg-4 text-center">
-            <header>
-                <h4>Gestion des commentaires</h4>
-                    <button id="com-mgmt">Gérer</button>
-            </header>
-        </div>
-    </div>
-
-    <div class="row program-div">
-        <div class="col-lg-12 text-center">
+        <div class="col-lg-6 text-center">
             <header>
                 <h4>Gestion du programme</h4>
                     <button id="program-mgmt">Gérer</button>

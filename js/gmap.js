@@ -22,6 +22,7 @@ var initMap = function() {
 
     function setPosition(marker) {
         var pos = marker.getPosition();
+
         $('#lat').val(pos.lat());
         $('#lng').val(pos.lng());
     }

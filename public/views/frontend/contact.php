@@ -2,6 +2,14 @@
 <?php $meta_description = 'Contactez Nacomed : envoyez-nous un message'; ?>
 <?php $og_title = 'Page de contact de Nacomed'; ?>
 
+<!-- Open Graph Data Facebook -->
+<meta property="og:title" content="Association Nacomed : Contact" />
+<meta property="og:description" content="Contactez Nacomed : envoyez-nous un message" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.nacomed.fr/index.php?action=displayContact" />
+<meta property="og:image" content="https://zupimages.net/up/20/05/nxfx.png" />
+<meta property="og:image:alt" content="Logo de l'association Nacomed" />
+
 <?php ob_start(); ?>
 
 <div class="conteneur">
@@ -13,7 +21,7 @@
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="text-center site-heading">
                         <h1>Contact</h1>
-                        <span class="subheading">Vous avez des questions ? J'ai des réponses.<span>
+                        <span class="subheading">Vous avez des questions ? Nous avons des réponses.<span>
                     </div>
                 </div>
             </div>
@@ -24,7 +32,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
-                <p class="text-center">Vous souhaitez entrer en contact ? Remplissez le formulaire ci-dessous pour m'envoyer un message et je vous répondrais le plus vite possible!</p>
+                <p class="text-center">Vous souhaitez entrer en contact ? Remplissez le formulaire ci-dessous pour nous envoyer un message et nous vous répondrons le plus vite possible!</p>
                 <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
                 <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
                 <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
@@ -38,15 +46,15 @@
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
-                        <label>Addresse Email</label>
+                        <label>Adresse Email</label>
                         <input type="email" class="form-control" placeholder="Adresse Email" id="email" required data-validation-required-message="Entrez votre adresse Email.">
                         <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <label>Numéro de téléphone</label>
-                        <input type="tel" class="form-control" placeholder="Numéro de téléphone" id="phone" required data-validation-required-message="Entrez votre numéro de téléphone.">
+                        <label>Numéro de téléphone (facultatif)</label>
+                        <input type="tel" class="form-control" placeholder="Numéro de téléphone" id="phone">
                         <p class="help-block text-danger"></p>
                         </div>
                     </div>

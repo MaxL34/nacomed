@@ -6,13 +6,10 @@
     try {
         if (!empty($_GET['action'])) {
             switch ($_GET['action']) {
-                case 'getArticle':
-                    if (isset($_GET['article_id']) && $_GET['article_id'] > 0) {
-                        getArtCom($_GET['article_id']);
-                        exit;
-                    } else {
-                        throw new Exception('Erreur d\'id de news, cette page n\'existe pas');
-                    }
+                
+                case 'displayMentions':
+                    displayMentions();
+                break;
 
                 case 'displayHome':
                     displayHome();
@@ -25,45 +22,10 @@
                 case 'displayContact':
                     displayContact();
                 break;
-            
-                case 'displayNews':
-                    displayNews();
-                break;
 
                 case 'displaySupport':
-                    displaySUpport();
-                break;
-                
-                /* COMMENTAIRES */
-                case 'addComment':
-                    $content = trim($_POST['com_content']);
-                    $author = trim($_POST['com_author']);
-
-                    if (isset($_POST['art_id']) && $_POST['art_id'] > 0) {
-                        if (!empty($content) && !empty($author)) {
-                            echo 'success';
-                            addComment($content, $author, $_POST['art_id']);
-                        } else if (empty($author)) {
-                            echo 'author_missing';
-                        } else if (empty($content)) {
-                            echo 'content_missing';
-                        }
-                    } else {
-                        throw new Exception('Erreur dans la récupération d\'id de la news');
-                    }
-                break;
-
-                case 'reportCom':
-                    if (isset($_GET['article_id']) && $_GET['article_id'] > 0) {
-                        if (isset($_GET['com_id'])) {
-                            reportCom($_GET['article_id'], $_GET['com_id']);
-                        } else {
-                            throw new Exception('Erreur d\'id de commentaire');
-                        }
-                    } else {
-                        throw new Exception('Erreur d\'id de news');
-                    }
-                break;
+                    displaySupport();
+                break;                    
 
                 /* BACKOFFICE */
 
@@ -74,31 +36,6 @@
                     session_start();
                     if (isset($_SESSION['user'])) {
                         displayAdmin();
-                    } else {
-                        displayLoginView();
-                    }
-                break;
-
-                /* COMMENTAIRES SIGNALES */
-
-                case 'displayRepComs':
-                    session_start();
-                    if (isset($_SESSION['user'])) {
-                        getReportedComs();
-                    } else {
-                        displayLoginView();
-                    }
-                break;
-
-                case 'deleteCom':
-                    session_start();
-                    if (isset($_SESSION['user'])) {
-                            if ($_POST['com_id']) {
-                                deleteCom($_POST['com_id']);
-                                echo 'success';
-                            } else {
-                                throw new Exception('Erreur de récupération d\'id de commentaire');
-                            }
                     } else {
                         displayLoginView();
                     }
@@ -207,6 +144,47 @@
                 
                 /* GESTIONNAIRE PROGRAMME BATEAU */
 
+                /* Affricher des données pour le programme du bateau */
+
+                case 'listProgInfos':
+                    session_start();
+
+                    $month = $_POST['month'];
+                    $week = $_POST['week'];
+
+                    if (isset($_SESSION['user'])) {
+                        if (!empty($month) && !empty($week)) {
+                                $prog = listProgInfos($month, $week);
+                        } else {
+                            throw new Exception('Mois ou semaine manquante');
+                        }
+                    } else {
+                        displayLoginView();
+                    }
+                    break;
+
+                /* Supprimer un programme pour une semaine donnée */
+
+                case 'delProg':
+                    session_start();
+
+                    $month = $_POST['month'];
+                    $week = $_POST['week'];
+
+                    if (isset($_SESSION['user'])) {
+                        if (!empty($month) && !empty($week)) {
+                                delProg($month, $week);
+                                echo 'success';
+                        } else {
+                            throw new Exception('Mois ou semaine manquante');
+                        }
+                    } else {
+                        displayLoginView();
+                    }
+                break;
+
+
+                /* Ajouter des données pour le programme du bateau */
                 case 'addProgInfos':
                     session_start();
 
@@ -223,7 +201,7 @@
                         if (empty($mission) && empty($details_mission) && empty($location) && empty($available_beds) && empty($comments)) {
                             echo 'missing_infos';
                         } else {
-                            if ($month === 'Janvier') {
+                            if ($month === 'prog_jan') {
                                 if ($week === '1') {
                                     addProgJanInfos($mission, $details_mission, $location, $available_beds, $comments, $week);
                                     echo 'Jan1';
@@ -239,7 +217,7 @@
                                 } else {
                                     throw new Exception('Erreur de numéro de semaine pour janvier');
                                 }
-                            } else if ($month === 'Février') {
+                            } else if ($month === 'prog_feb') {
                                 if ($week === '1') {
                                     addProgFebInfos($mission, $details_mission, $location, $available_beds, $comments, $week);
                                     echo 'Feb1';
@@ -255,7 +233,7 @@
                                 } else {
                                     throw new Exception('Erreur de numéro de semaine pour février');
                                 }
-                            } else if ($month === 'Mars') {
+                            } else if ($month === 'prog_mar') {
                                 if ($week === '1') {
                                     addProgMarInfos($mission, $details_mission, $location, $available_beds, $comments, $week);
                                     echo 'Mar1';
@@ -271,7 +249,7 @@
                                 } else {
                                     throw new Exception('Erreur de numéro de semaine pour mars');
                                 }
-                            } else if ($month === 'Avril') {
+                            } else if ($month === 'prog_apr') {
                                 if ($week === '1') {
                                     addProgAprInfos($mission, $details_mission, $location, $available_beds, $comments, $week);
                                     echo 'Apr1';
@@ -287,7 +265,7 @@
                                 } else {
                                     throw new Exception('Erreur de numéro de semaine pour avril');
                                 }
-                            } else if ($month === 'Mai') {
+                            } else if ($month === 'prog_may') {
                                 if ($week === '1') {
                                     addProgMayInfos($mission, $details_mission, $location, $available_beds, $comments, $week);
                                     echo 'May1';
@@ -303,7 +281,7 @@
                                 } else {
                                     throw new Exception('Erreur de numéro de semaine pour mai');
                                 }
-                            } else if ($month === 'Juin') {
+                            } else if ($month === 'prog_jun') {
                                 if ($week === '1') {
                                     addProgJunInfos($mission, $details_mission, $location, $available_beds, $comments, $week);
                                     echo 'Jun1';
@@ -319,7 +297,7 @@
                                 } else {
                                     throw new Exception('Erreur de numéro de semaine pour juin');
                                 }
-                            } else if ($month === 'Juillet') {
+                            } else if ($month === 'prog_jul') {
                                 if ($week === '1') {
                                     addProgJulInfos($mission, $details_mission, $location, $available_beds, $comments, $week);
                                     echo 'Jul1';
@@ -335,7 +313,7 @@
                                 } else {
                                     throw new Exception('Erreur de numéro de semaine pour juillet');
                                 }
-                            } else if ($month === 'Aout') {
+                            } else if ($month === 'prog_aug') {
                                 if ($week === '1') {
                                     addProgAugInfos($mission, $details_mission, $location, $available_beds, $comments, $week);
                                     echo 'Aug1';
@@ -351,7 +329,7 @@
                                 } else {
                                     throw new Exception('Erreur de numéro de semaine pour aout');
                                 }
-                            } else if ($month === 'Septembre') {
+                            } else if ($month === 'prog_sep') {
                                 if ($week === '1') {
                                     addProgSepInfos($mission, $details_mission, $location, $available_beds, $comments, $week);
                                     echo 'Sep1';
@@ -367,7 +345,7 @@
                                 } else {
                                     throw new Exception('Erreur de numéro de semaine pour septembre');
                                 } 
-                            } else if ($month === 'Octobre') {
+                            } else if ($month === 'prog_oct') {
                                 if ($week === '1') {
                                     addProgOctInfos($mission, $details_mission, $location, $available_beds, $comments, $week);
                                     echo 'Oct1';
@@ -383,7 +361,7 @@
                                 } else {
                                     throw new Exception('Erreur de numéro de semaine pour octobre');
                                 }
-                            } else if ($month === 'Novembre') {
+                            } else if ($month === 'prog_nov') {
                                     if ($week === '1') {
                                         addProgNovInfos($mission, $details_mission, $location, $available_beds, $comments, $week);
                                         echo 'Nov1';
@@ -399,7 +377,7 @@
                                     } else {
                                         throw new Exception('Erreur de numéro de semaine pour novembre');
                                     }
-                                } else if ($month === 'Décembre') {
+                                } else if ($month === 'prog_dec') {
                                     if ($week === '1') {
                                         addProgDecInfos($mission, $details_mission, $location, $available_beds, $comments, $week);
                                         echo 'Dec1';
@@ -422,7 +400,6 @@
                         displayLoginView();
                     }
                 break;
-
 
                 /* LOGIN */
                 case 'login':
@@ -449,186 +426,6 @@
                     session_start();
                     if (isset($_SESSION['user'])) {
                         session_destroy();
-                    }
-                break;
-
-                /* GESTION DES NEWS */
-
-                case 'displayNewsMgmt':
-                    session_start();
-                    if (isset($_SESSION['user'])) {
-                        displayNewsMgmt();
-                    } else {
-                        displayLoginView();
-                    }
-                break;
-
-                case 'displayNewsCreation':
-                    session_start();
-                    if (isset($_SESSION['user'])) {
-                        displayNewsCreation();
-                    } else {
-                        displayLoginView();
-                    }
-                break;
-
-                case 'addNews':
-                    session_start();
-                    $artTitle = trim($_POST['title']);
-                    $artContent = trim($_POST['content']);
-                    $img = $_FILES['img'];
-                    $url_video = $_POST['video'];
-
-
-                    if (isset($_SESSION['user'])) {
-                        if (!empty($artTitle) && !empty($artContent)) {
-                            if (!empty($img['name'])) {
-                                if (!empty($url_video)) {
-                                    $url_img = "img/news/".$img['name'];
-                                    $ext = strtolower(substr($img['name'],-3));
-                                    $allow_ext = array('jpg','png','gif');
-                                    if(in_array($ext,$allow_ext)) {
-                                        move_uploaded_file($img['tmp_name'],"img/news/".$img['name']);
-                                        $artId = addNews($artTitle, $artContent, $url_img, $url_video, $_SESSION['user']);
-                                        echo $artId;
-                                        exit;
-                                    } else {
-                                        throw new Exception('Votre image n\'est pas au bon format, seuls sont acceptés les .jpg, .png et .gif');
-                                    }
-                                } else {
-                                    $url_img = "img/news/".$img['name'];
-                                    $ext = strtolower(substr($img['name'],-3));
-                                    $allow_ext = array('jpg','png','gif');
-                                    if(in_array($ext,$allow_ext)) {
-                                        move_uploaded_file($img['tmp_name'],"img/news/".$img['name']);
-                                        $artId = addNewsNoVideo($artTitle, $artContent, $url_img, $_SESSION['user']);
-                                        echo $artId;
-                                        exit;
-                                    } else {
-                                        throw new Exception('Votre image n\'est pas au bon format, seuls sont acceptés les .jpg, .png et .gif');
-                                    }    
-                                }
-                            } else if (empty($img['name'])) {
-                                if (empty($url_video)) {
-                                    $artId = addNewsNoImgNoVideo($artTitle, $artContent, $_SESSION['user']);
-                                    echo $artId;
-                                    exit;
-                                } else {
-                                    $artId = addNewsVideo($artTitle, $artContent, $url_video, $_SESSION['user']);
-                                    echo $artId;
-                                    exit;
-                                }
-                            }
-                        } else if (empty($artTitle) && empty($artContent)) {
-                            echo 'failed';
-                            exit;
-                        } else if (empty($artTitle) && !empty($artContent)) {
-                            echo 'title_missing';
-                            exit;
-                        } else if (!empty($artTitle) && empty($artContent)) {
-                            echo 'content_missing';
-                            exit;
-                        } else {
-                            throw new Exception('Erreur fatale. Veuillez contacter votre webmaster.');
-                            exit;
-                        }
-                    } else {
-                        displayLoginView();
-                    }
-                break;
-
-                case 'listArticlesToEdit':
-                    session_start();
-                    if (isset($_SESSION['user'])) {
-                        listArticlesToEdit();
-                    } else {
-                        displayLoginView();
-                    }
-                break;
-
-                case 'editArticle':
-                    session_start();
-                    if (isset($_SESSION['user'])) {
-                        if (isset($_GET['article_id']) && $_GET['article_id'] > 0) {
-                            editArticle($_GET['article_id']);
-                        } else {
-                            throw new Exception('Erreur d\'id de news. Veuillez contacter votre webmaster');
-                        }
-                    } else {
-                        displayLoginView();
-                    }
-                break;
-
-                case 'updateArticle':
-                    session_start();
-                    $artId = $_POST['art_id'];
-
-                    if (isset($_SESSION['user'])) {
-                        if (isset($artId) && $artId > 0) {
-                            $artTitle = trim($_POST['title']);
-                            $artContent = trim($_POST['content']);
-                            $img = $_FILES['img'];
-                            $url_video = $_POST['video'];
-
-                            if (!empty($artTitle) && !empty($artContent)) {
-                                if (!empty($img['name'])) {
-                                    if (!empty($url_video)) {
-                                        $url_img = "img/news/".$img['name'];
-                                        $ext = strtolower(substr($img['name'],-3));
-                                        $allow_ext = array('jpg','png','gif');
-                                        if(in_array($ext,$allow_ext)) {
-                                            move_uploaded_file($img['tmp_name'],"img/news/".$img['name']);
-                                            updateArticle($artTitle, $artContent, $url_img, $url_video, $artId);
-                                            echo $artId;
-                                            exit;
-                                        } else {
-                                            throw new Exception('Votre image n\'est pas au bon format, seuls sont acceptés les .jpg, .png et .gif');
-                                        }
-                                    } else {
-                                        $url_img = "img/news/".$img['name'];
-                                        $ext = strtolower(substr($img['name'],-3));
-                                        $allow_ext = array('jpg','png','gif');
-                                        if(in_array($ext,$allow_ext)) {
-                                            move_uploaded_file($img['tmp_name'],"img/news/".$img['name']);
-                                            updateArticleNoVideo($artTitle, $artContent, $url_img, $artId);
-                                            echo $artId;
-                                            exit;
-                                        } else {
-                                            throw new Exception('Votre image n\'est pas au bon format, seuls sont acceptés les .jpg, .png et .gif');
-                                        }    
-                                    }
-                            } else if (empty($img['name'])) {
-                                if (empty($url_video)) {
-                                    updateArticleNoImgNoVideo($artTitle, $artContent, $artId);
-                                    echo $artId;
-                                    exit;
-                                } else {
-                                    updateArticleVideo($artTitle, $artContent, $url_video, $artId);
-                                    echo $artId;
-                                    exit;
-                                }
-                            }
-                            } else if (empty($artTitle) && empty($artContent)) {
-                                echo 'failed';
-                            } else if (empty($artTitle) && !empty($artContent)) {
-                                echo 'title_missing';
-                            } else if (!empty($artTitle) && empty($artContent)) {
-                                echo 'content_missing';
-                            } else {
-                                throw new Exception('Erreur fatale. Veuillez contacter votre webmaster.');
-                            }
-                        } else {
-                            throw new Exception('Erreur dans la récupération de l\'id de la news');
-                    }} else {
-                        displayLoginView();
-                    }
-                break;
-
-                case "deleteArticle":
-                    if (isset($_GET['article_id']) && $_GET['article_id'] > 0) {
-                        deleteArticle($_GET['article_id']);
-                    } else {
-                        throw new Exception('Erreur d\'id de news. Veuillez contacter votre webmaster.');
                     }
                 break;
 

@@ -22,7 +22,7 @@
                         <tr>
                             <th scope="col">Nom</th>
                             <th scope="col">Embarquement</th>
-                            <th scope="col">Lattitude</th>
+                            <th scope="col">Latitude</th>
                             <th scope="col">Longitude</th>
                             <th scope="col">Commentaires</th>
                             <th scope="col">Actions</th>
@@ -80,8 +80,8 @@
 <?php $content = ob_get_clean(); ?>
 <?php require('public/views/layoutBack.php'); ?>
 
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMYjmQOsX1wZFkHJECVFrCZet0FJYK9kg&callback=initMap" async defer></script>
-
 <!-- JavaScript files-->
 <script src="./js/gmapEvents.js"></script>
+
+<!-- Google Map -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=<?php include('./config.php'); echo $apiKey; ?>&callback=initMap">google.maps.event.addDomListener(window,'load', initMap);</script>

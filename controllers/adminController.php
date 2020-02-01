@@ -1,157 +1,9 @@
 <?php
-    require('./vendor/autoload.php');
-    
-    use App\Articles;
+
     use App\Program;
     use App\Comments;
     use App\Map;
     use App\Users;
-
-/* Liste des news à éditer */
-function listArticlesToEdit() {
-    try {
-        $articlesManager = new App\Articles\ArticlesManager();    
-        $articles = $articlesManager->listArticles();
-        require('./public/views/backend/newsEditionView.php');
-    } catch(Exception $e) {
-        $errorMessage = $e->getMessage();
-        require('./public/views/frontend/errorView.php');
-    }
-}
-
-/* Ajouter une news sans vidéo/sans image */
-function addNewsNoImgNoVideo($art_title, $art_content, $art_author) {
-    try {
-        $articlesManager = new App\Articles\ArticlesManager();
-        $article = $articlesManager->addNewsNoImgNoVideo($art_title, $art_content, $art_author);
-        $articleId = $article->art_id();
-        return $articleId;
-        require('./public/views/backend/newsCreationView.php');
-    } catch(Exception $e) {
-        $errorMessage = $e->getMessage();
-        require('./public/views/frontend/errorView.php');
-    }
-}
-
-/* Ajouter une news avec image/ sans vidéo */
-function addNewsNoVideo($art_title, $art_content, $url_img, $art_author) {
-    try {
-        $articlesManager = new App\Articles\ArticlesManager();
-        $article = $articlesManager->addNewsNoVideo($art_title, $art_content, $url_img, $art_author);
-        $articleId = $article->art_id();
-        return $articleId;
-        require('./public/views/backend/newsCreationView.php');
-    } catch(Exception $e) {
-        $errorMessage = $e->getMessage();
-        require('./public/views/frontend/errorView.php');
-    }
-}
-
-/* Ajouter une news avec vidéo / sans image */
-function addNewsVideo($art_title, $art_content, $url_video, $art_author) {
-    try {
-        $articlesManager = new App\Articles\ArticlesManager();
-        $article = $articlesManager->addNewsVideo($art_title, $art_content, $url_video, $art_author);
-        $articleId = $article->art_id();
-        return $articleId;
-        require('./public/views/backend/newsCreationView.php');
-    } catch(Exception $e) {
-        $errorMessage = $e->getMessage();
-        require('./public/views/frontend/errorView.php');
-    }
-}
-
-/* Ajouter une news avec vidéo / avec image */
-function addNews($art_title, $art_content, $url_img, $url_video, $art_author) {
-    try {
-        $articlesManager = new App\Articles\ArticlesManager();
-        $article = $articlesManager->addNews($art_title, $art_content, $url_img, $url_video, $art_author);
-        $articleId = $article->art_id();
-        return $articleId;
-        require('./public/views/backend/newsCreationView.php');
-    } catch(Exception $e) {
-        $errorMessage = $e->getMessage();
-        require('./public/views/frontend/errorView.php');
-    }
-}
-
-/* Récupérer une news à éditer */
-function editArticle($article_id) {
-    try {
-        $articlesManager = new App\Articles\ArticlesManager();
-        $article = $articlesManager->getArticle($article_id);
-        require('./public/views/backend/newsUpdateView.php');
-    } catch(Exception $e) {
-        $errorMessage = $e->getMessage();
-        require('./public/views/frontend/errorView.php');
-    }
-}
-
-/* Mettre à jour une news avec vidéo / sans image */
-function updateArticleNoVideo($art_title, $art_content, $url_img, $art_id) {
-    try {
-        $articlesManager = new App\Articles\ArticlesManager();
-        $articleToUpdate = $articlesManager->updateArticleNoVideo($art_title, $art_content, $url_img, $art_id);
-        return $articleToUpdate;
-        require('./public/views/frontend/newsView.php');
-    } catch(Exception $e) {
-        $errorMessage = $e->getMessage();
-        require('./public/views/frontend/errorView.php');
-    }
-}
-
-/* Mettre à jour une news sans vidéo / sans image */
-function updateArticleNoImgNoVideo($art_title, $art_content, $art_id) {
-    try {
-        $articlesManager = new App\Articles\ArticlesManager();
-        $articleToUpdate = $articlesManager->updateArticleNoImgNoVideo($art_title, $art_content, $art_id);
-        return $articleToUpdate;
-        require('./public/views/frontend/newsView.php');
-    } catch(Exception $e) {
-        $errorMessage = $e->getMessage();
-        require('./public/views/frontend/errorView.php');
-    }
-}
-
-/* Mettre à jour une news avec vidéo / sans image */
-function updateArticleVideo($art_title, $art_content, $url_video, $art_id) {
-    try {
-        $articlesManager = new App\Articles\ArticlesManager();
-        $articleToUpdate = $articlesManager->updateArticleVideo($art_title, $art_content, $url_video, $art_id);
-        return $articleToUpdate;
-        require('./public/views/frontend/newsView.php');
-    } catch(Exception $e) {
-        $errorMessage = $e->getMessage();
-        require('./public/views/frontend/errorView.php');
-    }
-}
-
-/* Mettre à jour une news avec vidéo / avec image */
-function updateArticle($art_title, $art_content, $url_img, $url_video, $art_id) {
-    try {
-        $articlesManager = new App\Articles\ArticlesManager();
-        $articleToUpdate = $articlesManager->updateArticle($art_title, $art_content, $url_img, $url_video, $art_id);
-        return $articleToUpdate;
-        require('./public/views/frontend/newsView.php');
-    } catch(Exception $e) {
-        $errorMessage = $e->getMessage();
-        require('./public/views/frontend/errorView.php');
-    }
-}
-
-/* Supprimer une news */
-function deleteArticle($article_id) {
-    try {
-        $articlesManager = new App\Articles\ArticlesManager();
-        $commentsManager = new App\Comments\CommentsManager();
-        $comsToDelete = $commentsManager->deleteComsFromArticle($article_id);
-        $articleToDelete = $articlesManager->deleteArticle($article_id);
-        require('./views/frontend/articleView.php');
-    } catch(Exception $e) {
-        $errorMessage = $e->getMessage();
-        require('./public/views/frontend/errorView.php');
-    }
-}
 
 /* Ajouter un évènement sur la map */
 function addEvent($name, $lat, $lng, $date, $com) {
@@ -358,25 +210,27 @@ function addProgDecInfos($mission, $details_mission, $location, $available_beds,
     }
 }
 
-/* Supprimer un commentaire signalé */
-function deleteCom($com_id) {
+/* Afficher les infos du programme pour une semaine donnée */
+
+function listProgInfos($month, $week) {
     try {
-        $commentsManager = new App\Comments\CommentsManager();
-        $comToDelete = $commentsManager->deleteCom($com_id);
-        return $comToDelete;
-        require('./public/views/backend/reportedComsView.php');
+        $progManager = new App\Program\ProgramManager();
+        $prog = $progManager->getProg_week($month, $week);
+        echo json_encode($prog);
+        return;
     } catch(Exception $e) {
         $errorMessage = $e->getMessage();
         require('./public/views/frontend/errorView.php');
     }
 }
 
-/* Récupérer tous les commentaires signalés */
-function getReportedComs() {
+/* Supprimer les infos du programme pour une semaine donnée */
+
+function delProg($month, $week) {
     try {
-        $commentsManager = new App\Comments\CommentsManager();
-        $comments = $commentsManager->getReportedComs();  
-        require('./public/views/backend/reportedComsView.php');
+        $progManager = new App\Program\ProgramManager();
+        $prog = $progManager->delProg_week($month, $week);
+        return $prog;
     } catch(Exception $e) {
         $errorMessage = $e->getMessage();
         require('./public/views/frontend/errorView.php');
@@ -400,20 +254,10 @@ function logUser($login, $password) {
 function displayLoginView() {
     require('./public/views/backend/loginView.php');
 }
-    
-/* Afficher la page de création de news */
-function displayNewsCreation() {
-    require('./public/views/backend/newsCreationView.php');
-}
 
 /* Afficher le tableau de bord admin */
 function displayAdmin() {
     require('./public/views/backend/adminView.php');
-}
-
-/* Afficher le tableau de bord de gestion des news */
-function displayNewsMgmt() {
-    require('./public/views/backend/newsManagementView.php');
 }
 
 /* Afficher le tableau de bord de gestion de la map */

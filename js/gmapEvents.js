@@ -11,11 +11,73 @@ var initMap = function() {
     });
 
     $('.row-map').each(function() {
+
+        function ddToDms_lat(lat) {
+
+            var lat = lat;
+            var latResult;
+         
+            lat = parseFloat(lat);  
+         
+            latResult = (lat >= 0)? ' N' : ' S ';
+         
+            // Joining both variables and separate them with a space.
+            var lat_dms = getDms(lat) + latResult;
+            
+            // Return the resultant string
+            
+            return lat_dms;
+
+            //$('.event_lat').html(lat_dms);
+            //$('.event_lng').html(lng_dms);
+         }
+
+         function ddToDms_lng(lng) {
+            var lng = lng;
+
+            lng = parseFloat(lng);
+
+            lngResult = (lng >= 0)? ' E' : ' O';
+         
+            // Call to getDms(lng) function for the coordinates of Longitude in DMS.
+            // The result is stored in lngResult variable.
+            var lng_dms = getDms(lng) + lngResult;
+
+            return lng_dms;
+         }
+
+        function getDms(val) {
+
+            var valDeg, valMin, valSec, result;
+          
+            val = Math.abs(val);
+          
+            valDeg = Math.floor(val);
+            result = valDeg + "° ";
+          
+            valMin = Math.floor((val - valDeg) * 60);
+            result += valMin + "' ";
+          
+            valSec = Math.round((val - valDeg - valMin / 60) * 3600 * 1000) / 1000;
+            result += valSec + '"';
+          
+            return result;
+          }
+
         var lat_class = $(this).find('.event_lat');
         var event_lat = lat_class.html();
 
         var lng_class = $(this).find('.event_lng');
         var event_lng = lng_class.html();
+
+        var lat_dms = ddToDms_lat(event_lat);
+        var lng_dms = ddToDms_lng(event_lng);
+
+        lat_class.html(lat_dms);
+        lng_class.html(lng_dms);
+
+        
+        //console.log(lat_dms, lng_dms);
 
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(event_lat, event_lng),

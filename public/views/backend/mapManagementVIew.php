@@ -24,7 +24,7 @@
             <form class="form-group" id="map-form" method="post" action="/nacomed/index.php?action=addEvent">
                 <label for="name">Nom de l'évènement : </label><input class="form-control" type="text" id="name" name="name" /><br/>
                 <label for="lng">Longitude : </label><input class="form-control" type="text" id="lng" name="lng" /><br/>
-                <label for="lat">Lattitude : </label><input class="form-control" type="text" id="lat" name="lat" /><br>
+                <label for="lat">Latitude : </label><input class="form-control" type="text" id="lat" name="lat" /><br>
                 <label for="on_date">Date d'embarquement : </label><input class="form-control" type="text" id="on_date" name="on_date" /><br>
                 <label for="comments">Commentaires : </label><input class="form-control" type="text" id="comments" name="comments" /><br>
                 <label for="city">Ville : </label><input class="form-control" type="text" id="city" name="city" /><br>
@@ -49,12 +49,12 @@
 <?php $content = ob_get_clean(); ?>
 <?php require('public/views/layoutBack.php'); ?>
 
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMYjmQOsX1wZFkHJECVFrCZet0FJYK9kg&callback=initMap" async defer></script>
-
 <!-- JavaScript files-->
 <script src="./js/gmap.js"></script>
 <script src="./js/adminOptions.js"></script>
 <script src="./js/controllers/adminOptions.js"></script>
 <script src="./js/eventAdder.js"></script>
 <script src="./js/controllers/eventAdder.js"></script>
+
+<!-- Google Map -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=<?php include('./config.php'); echo $apiKey; ?>&callback=initMap">google.maps.event.addDomListener(window,'load', initMap);</script>

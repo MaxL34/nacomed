@@ -1,8 +1,8 @@
 var initMap = function() {
     /* GMAP */
-    var event_lat_pl = $('#lat').attr('placeholder');
+    var event_lat_pl = $('#lat').attr('value');
     var event_lat = parseFloat(event_lat_pl);
-    var event_lng_pl = $('#lng').attr('placeholder');
+    var event_lng_pl = $('#lng').attr('value');
     var event_lng = parseFloat(event_lng_pl);
     var pointer= {lat: event_lat, lng: event_lng};
 

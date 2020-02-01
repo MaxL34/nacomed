@@ -28,7 +28,7 @@
         <!-- Custom stylesheet - for your changes-->
         <link rel="stylesheet" href="./css/custom.css">
         <!-- Favicon-->
-        <link rel="shortcut icon" href="./img/logo_nacomed.png">
+        <link rel="shortcut icon" href="./img/logo_nacomed_resized.png">
         <!-- TinyMCE -->
         <?php if (isset($tinymce)) {
                 echo '<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=0ofr5ymckej6ac4mcq2doqoozjut2zifnyjjfp067bqy5s12"></script>';
@@ -41,7 +41,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top onboard-nav" id="mainNav">
             <div class="container nav-div">
-                <a class="logo navbar-brand" href="../../.../../../index.php"><img src="../../../img/logo_nacomed.png" /></a>
+                <a class="logo navbar-brand" href="../../.../../../index.php"><img class="logo-nacomed" src="../../../img/logo_nacomed.png" /></a>
                     <button class="menu_btn navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         Menu
                         <i class="fas fa-bars"></i>
@@ -51,9 +51,6 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="../../.../../../index.php">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../../index.php?action=displayNews">Actualités</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../../../index.php?action=displayOnboard">Embarquement</a>
@@ -86,48 +83,10 @@
         <!-- Footer -->
         <footer class="page-footer font-small special-color-dark pt-4">
 
-        <!-- Footer Elements -->
-        <div class="container">
-
-            <!-- Social buttons -->
-            <ul class="list-unstyled list-inline text-center">
-            <li class="list-inline-item">
-                <a class="btn-floating btn-fb mx-1">
-                <i class="fab fa-facebook-f"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-tw mx-1">
-                <i class="fab fa-twitter"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-gplus mx-1">
-                <i class="fab fa-google-plus-g"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-li mx-1">
-                <i class="fab fa-linkedin-in"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-dribbble mx-1">
-                <i class="fab fa-dribbble"> </i>
-                </a>
-            </li>
-            </ul>
-            <!-- Social buttons -->
-
-        <div class="text-center">
-            <p>ATTENTION : SITE EN CONSTRUCTION. LES INFORMATIONS CONCERNANT LES MISSIONS ET LES EMBARQUEMENTS SONT POUR LE MOMENT FICTIVES. POUR TOUTE QUESTION CONTACTEZ-NOUS (PAGE CONTACT)</p>
-        </div>
-        </div>
-        <!-- Footer Elements -->
-
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2019 Copyright :
             <a href="./index.php?action=displayContact"> NACOMED</a>
+            <a href="./index.php?action=displayMentions">Mentions légales</a>
         </div>
         <!-- Copyright -->
 
@@ -147,12 +106,5 @@
         <script src="./js/controllers/signOut.js"></script>
         <script src="./js/controllers/adminOptions.js"></script>
         <script src="./js/adminOptions.js"></script>
-        <!-- Google Map -->
-        <!-- <?php if (isset($gmap_script)) {
-            echo $gmap_script;
-            } else {
-                return false;
-            } 
-        ?> -->
     </body>
 </html>

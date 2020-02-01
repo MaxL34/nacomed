@@ -22,11 +22,11 @@
 
         <div class="col-lg-10 area-map">
             <form class="form-group" id="event-update-form" method="post" action="/nacomed/index.php?action=updateEvent">
-                <label for="name">Nom de l'évènement : </label><input class="form-control" type="text" id="name" name="name" placeholder="<?php echo $event['event_name']; ?>" /><br/>
-                <label for="lng">Longitude : </label><input class="form-control" type="text" id="lng" name="lng" placeholder="<?php echo $event['event_lng']; ?>" /><br/>
-                <label for="lat">Lattitude : </label><input class="form-control" type="text" id="lat" name="lat" placeholder="<?php echo $event['event_lat']; ?>" /><br>
-                <label for="on_date">Date d'embarquement : </label><input class="form-control" type="text" id="on_date" name="on_date" placeholder="<?php echo $event['onboarding_date']; ?>" /><br>
-                <label for="comments">Commentaires : </label><input class="form-control" type="text" id="comments" name="comments" placeholder="<?php echo $event['event_comments']; ?>" /><br>
+                <label for="name">Nom de l'évènement : </label><input class="form-control" type="text" id="name" name="name" value="<?php echo $event['event_name']; ?>" /><br/>
+                <label for="lng">Longitude : </label><input class="form-control" type="text" id="lng" name="lng" value="<?php echo $event['event_lng']; ?>" /><br/>
+                <label for="lat">Lattitude : </label><input class="form-control" type="text" id="lat" name="lat" value="<?php echo $event['event_lat']; ?>" /><br>
+                <label for="on_date">Date d'embarquement : </label><input class="form-control" type="text" id="on_date" name="on_date" value="<?php echo $event['onboarding_date']; ?>" /><br>
+                <label for="comments">Commentaires : </label><input class="form-control" type="text" id="comments" name="comments" value="<?php echo $event['event_comments']; ?>" /><br>
                 <label for="city">Ville : </label><input class="form-control" type="text" id="city" name="city" /><br>
                 <label for="event_id"></label><input type="hidden" id="event_id" name="event_id" value="<?php echo $event['event_id']; ?>" />
 
@@ -51,9 +51,9 @@
 <?php $content = ob_get_clean(); ?>
 <?php require('public/views/layoutBack.php'); ?>
 
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMYjmQOsX1wZFkHJECVFrCZet0FJYK9kg&callback=initMap" async defer></script>
-
 <script src="./js/gmapEditEvent.js"></script>
 <script src="./js/adminOptions.js"></script>
 <script src="./js/controllers/adminOptions.js"></script>
+
+<!-- Google Map -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=<?php include('./config.php'); echo $apiKey; ?>&callback=initMap">google.maps.event.addDomListener(window,'load', initMap);</script>

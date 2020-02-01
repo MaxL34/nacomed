@@ -2,22 +2,11 @@ var option = {
     programMgmtBtn: $('#program-mgmt'),
     mapMgmtBtn: $('#map-mgmt'),
     editMgmtBtn: $('#edit-mgmt'),
-    newsMgmtBtn: $('#news-mgmt'),
     mapMgmtBtn: $('#map-mgmt'),
-    comMgmtBtn: $('#com-mgmt'),
-    newsCreationBtn: $('#news-creation'),
     listEventsBtn: $('#events-list'),
 
     init: function() {
         var self = this;
-
-        self.newsMgmtBtn.click(function() {
-            window.location.href = "./index.php?action=displayNewsMgmt";
-        });
-
-        self.newsCreationBtn.click(function() {
-            window.location.href = "./index.php?action=displayNewsCreation";
-        });
 
         self.editMgmtBtn.click(function() {
             window.location.href = "../../../index.php?action=listArticlesToEdit";
@@ -25,10 +14,6 @@ var option = {
     
         self.mapMgmtBtn.click(function() {
             window.location.href = "./index.php?action=displayMapMgmt";
-        });
-
-        self.comMgmtBtn.click(function() {
-            window.location.href = "./index.php?action=displayRepComs";
         });
 
         self.programMgmtBtn.click(function() {

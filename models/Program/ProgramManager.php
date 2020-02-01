@@ -16,6 +16,20 @@ class ProgramManager extends \App\Managers\Manager {
         return $row;
     }
 
+    public function getProg_week($month, $week) {
+        $q = $this->dbConnect()->prepare('SELECT mission, details_mission, location, available_beds, comments FROM ' . $month . ' WHERE id = ?');
+        $q->execute(array($week));
+
+        $data = $q->fetch();
+
+        return $data;
+    }
+
+    public function delProg_week($month, $week) {
+        $q = $this->dbConnect()->prepare('UPDATE ' . $month . ' SET mission = "", details_mission = "", location = "", available_beds = "0", comments = "" WHERE id = ?');
+        $q->execute(array($week));
+    }
+
     public function getProg_feb() {
         $row = [];
 

@@ -1,4 +1,6 @@
 $('.owl-carousel').owlCarousel({
+    autoplay: true,
+    autoplayHoverPause: true,
     items:1,
     lazyLoad:true,
     loop:true,
@@ -52,8 +54,5 @@ var initMap = function() {
                 infowindow.open(map, marker);
                 currentInfoWindow = infowindow;
             });
-        })  
-    }
-        
-
-    //initMap();
+        });  
+}

@@ -8,27 +8,73 @@
   margin-left: 0;
 }
 
+/* MENU DE NAVIGATION */
+
+/* logo Nacomed */
+
+.logo-nacomed {
+  width : 19%;
+}
 
 /* PAGE D'ACCUEIL */
+
+/* Slider */
+
+.owl-prev {
+  position: relative;
+  left: -595px;
+  bottom: 400px;
+}
+
+.owl-next {
+  position: relative;
+  left: 595px;
+  bottom: 400px;
+}
+
+.owl-dots {
+  position: relative;
+  bottom: 135px;
+}
+
+/*.owl-carousel .owl-wrapper {
+  display: flex !important;
+}*/
+
+.owl-carousel .owl-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 /* Section 1 : Accueil */
 
 .welcome {
   margin-bottom: 55px;
+  background: rgba(17, 65, 86, 0.5);
+  opacity: 0.9;
+  border-radius: 80px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .nav_infos {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: rgba(17, 65, 86, 0.5);
+  border-radius: 25px;
+  opacity: 0.9;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-left: auto;
   margin-right: auto;
-  left: 5%;
   font-weight: bold;
   font-size: 18px;
 }
 
 .fa-angle-double-right {
-   padding-right: 20px;
+   padding-right: 5px;
 }
 
 .link-down {
@@ -126,6 +172,7 @@
 .owl-carousel.owl-loaded.owl-drag {
   display: flex;
   flex-direction: column;
+  margin-bottom: -115px;
 }
 
 .owl-lazy {
@@ -150,8 +197,13 @@
 }
 
 .boat-plan-div {
-  margin-left: auto;
+  display: flex;
+}
+
+.boat-plan-div a {
   margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 .details-text-div {
@@ -164,21 +216,24 @@
 }
 
 /*Section pagination */
-
-#boat {
-  width: 65px;
-}
-
-#specs_boat {
-  width: 135px;
-}
-
 .onepage-pagination span {
-  float: right;
   position: relative;
-  top: -12px;
-  left: -10px;
-  /*display: none;*/
+  left: -150px;
+  bottom: 1px;
+  color: cadetblue;
+  float: right;
+}
+
+.onepage-pagination {
+  color: cadetblue;
+  width: 170px;
+}
+
+.pagination-nav {
+  position: fixed;
+  left: 97%;
+  top : 50%;
+  z-index: 50;
 }
 
 .onepage-pagination a:hover #accueil {
@@ -209,11 +264,20 @@
 }
 
 .person_infos {
-  padding-left: 315px;
+  padding-left: 300px;
 }
 
 .person_pic {
-  padding-right: 315px;
+  width: 33%;
+  margin-bottom: 100px;
+}
+
+.pic {
+  width: 121px;
+}
+
+.team-row2 {
+  justify-content: space-around;
 }
 
 /* FIN PAGE D'ACCUEIL*/
@@ -249,7 +313,7 @@
 }
 
 .eco-volunteer {
-  margin-top: 165px;
+  margin-top: 235px;
 }
 
 .eco-vol-text {
@@ -258,6 +322,25 @@
 
 .eco-vol-text header {
   margin-bottom: 2%;
+}
+
+.eco-vol {
+  display: flex;
+  flex-direction: column;
+}
+
+.gifts-desc {
+  margin-top: 5%;
+}
+
+.what-cost {
+  margin-bottom: 5%;
+}
+
+.gifts-infos {
+  margin-left: auto;
+  margin-top: 1%;
+  font-size: 14px;
 }
 
 .onboard-carousel {
@@ -307,9 +390,14 @@ table, td, th {
 
 /* PAGE CONTACT */
 
+.eco-marin-title {
+  margin-bottom: 60px;
+}
+
 .conteneur {
   position: relative;
-  top: 165px;
+  top: 235px;
+  padding-bottom: 185px;
 }
 
 #sendMessageButton {
@@ -318,6 +406,12 @@ table, td, th {
 }
 
 /* FIN PAGE CONTACT */
+
+/* PAGE TAVERNE */
+
+.conteneur-tavern {
+  margin-bottom: 27%;
+}
 
 /* PAGE D'ADMINISTRATION */
 
@@ -357,6 +451,42 @@ table, td, th {
 }
 
 /* PAGE DE NEWS (UNE NEWS) */
+
+/* Bouton partage FB */
+
+/*.fb-share-button, .fb_iframe_widget {
+  position: relative;
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  padding-left: 2.2rem;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Rum Raisin', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #363636;
+  
+}*/
+
+.fb-share-button, .fb_iframe_widget {
+  position: fixed;
+  display: block;
+  height: 1.2rem;
+  width: 1.2rem;
+  top:47.5vh;
+  bottom: 1rem;
+  left: 0.6rem;
+
+  background-image: url(../img/facebook.svg);
+  background-size: 1.2rem 1.2rem;
+  background-repeat: no-repeat;
+}
+
+.fb-xfbml-parse-ignore {
+  position: fixed;
+  top: 50vh;
+}
 
 .news-display {
   display: flex;
@@ -506,7 +636,11 @@ table, td, th {
 /* PAGE NOUS SOUTENIR */
 
 #haWidget {
-  margin-top: 10%;
+  margin-top: 13%;
+}
+
+.helloForm {
+  margin-top: 0;
 }
 
 .donation {
@@ -532,7 +666,12 @@ table, td, th {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  top: 125px;
+  margin-top: 5%;
+  margin-bottom: -10%;
+}
+
+.footer-container {
+  margin-top: 190px;
 }
 
 /* MODALS */
@@ -543,11 +682,12 @@ table, td, th {
   left: 43%;
   background: aliceblue;
   width: 250px;
-  height: 150px;
+  height: 200px;
 }
 
 .modal_content {
   display: flex;
+  flex-direction: column;
 }
 
 .modal_edit_content {
@@ -580,6 +720,7 @@ table, td, th {
   position: fixed;
   top: 95%;
   right: 5%;
+  z-index: 100;
 }
 
 /* Vue des erreurs */
@@ -593,9 +734,9 @@ table, td, th {
 
 /* Menu de navigation*/
 
-.home-navbar {
-  margin-left: 0;
-  margin-right: 0;
+.home-navbar, .nav-div {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .support-link {
@@ -614,16 +755,13 @@ table, td, th {
   color: #343a40;
   }
   
-  .navbar-brand img {
-    width: 9%;
-  }
-  
   #mainNav .navbar-toggler {
   font-size: 12px;
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
-  color: #343a40;
+  color: #677dbd;
+  bottom: 80px;
   }
   
   #mainNav .navbar-nav > li.nav-item > a {
@@ -643,6 +781,24 @@ table, td, th {
     left: 15%;
   }
 
+@media screen and (max-height: 630px) {
+  .position-relative{
+    top: 130px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  #mainNav .navbar-toggler {
+    bottom: 55px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 992px) {
+  #mainNav .navbar-toggler {
+    bottom: 55px;
+  }
+}
+
 @media screen and (min-width: 1600px) {
   #mainNav {
     border-bottom: 1px solid transparent;
@@ -653,8 +809,12 @@ table, td, th {
     color: #fff;
   }
 
+  #mainNav .navbar-nav > li.nav-item > a:hover {
+    color: #677dbd;
+  }
+
   .navbar-expand-lg .navbar-collapse {
-    margin-left: 25%;
+    margin-left: 28%;
   }
 }
 
@@ -683,6 +843,13 @@ table, td, th {
 
 }
 
+@media screen and (min-width: 1400px) {
+  .home-navbar, .nav-div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
 
   #mainNav {
@@ -700,7 +867,7 @@ table, td, th {
   }
 
   .navbar-expand-lg .navbar-collapse {
-    margin-left: 16%;
+    margin-left: 22%;
   }
 
   #mainNav .navbar-nav > li.nav-item > a {
@@ -749,6 +916,30 @@ table, td, th {
 
   .login {
     left: 2%;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    margin-left: 15%;
+  }
+}
+
+/*BOUTON HELLOASSO */
+
+@media screen and (max-height: 630px) {
+  #haWidget {
+    margin-top: 19%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #haWidget {
+    margin-top: 18%;
+  }
+}
+
+@media screen and (min-width: 340px) and (max-width: 992px) {
+  #haWidget {
+    margin-top: 40%;
   }
 }
 
@@ -809,11 +1000,6 @@ table, td, th {
   .admin-link, .logout {
     left: 0;
   }
-
-  .navbar-brand img {
-    width: 15%;
-  }
-
 }
 
 /* PAGE ACCUEIL */
@@ -842,7 +1028,6 @@ table, td, th {
   .menu_btn {
     position: relative;
     margin-left: auto;
-    bottom: 65px;
   }
 }
 
@@ -872,9 +1057,65 @@ table, td, th {
 
 /* Section 3 : slider */
 
+@media screen and (max-width: 1400px) {
+  .owl-prev {
+    left: -410px;
+  }
+
+  .owl-next {
+    left: 410px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .owl-lazy {
     height: 300px;
+  }
+
+  .owl-prev {
+    left: -290px;
+    bottom: 250px;
+  }
+
+  .owl-next {
+    left: 290px;
+    bottom: 250px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .eco-volunteer {
+    margin-top: 220px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .owl-prev {
+    left: -200px;
+  }
+
+  .owl-next {
+    left: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .owl-prev {
+    left: -130px;
+  }
+
+  .owl-next {
+    left: 130px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .owl-prev {
+    left: -90px;
+  }
+
+  .owl-next {
+    left: 90px;
   }
 }
 
@@ -905,8 +1146,8 @@ table, td, th {
   }
   
   .contact-logo {
-    width: 60%;
-    height: 80%;
+    width: 20%;
+    height: 67%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -918,7 +1159,24 @@ table, td, th {
   .person_pic {
     padding-right: 0px;
   }
+}
 
+@media (max-width: 480px) {
+  .contact-logo {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .person_pic {
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+  }
+
+  .contact-logo {
+    width: 30%;
+  }
 }
 
 /* PAGE ACTUALITES */
@@ -948,6 +1206,16 @@ table, td, th {
   .donation {
     margin-top: 40%;
   }
+
+  #haWidget {
+    margin-top: 230px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #haWidget {
+    margin-top: 230px;
+  }
 }
 
 /* PAGE D'UNE NEWS */
@@ -967,6 +1235,18 @@ table, td, th {
 }
 
 /* TABLEAU DE BORD ADMIN */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .login-div {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .login-div {
+    margin-top: 15%;
+  }
+}
 
 @media screen and (max-width: 992px) {
   .admin_interface {
@@ -1011,6 +1291,7 @@ table, td, th {
 @media screen and (max-width: 992px) {
   #sendMessageButton {
     left: 35%;
+    bottom: 30px;
   }
 }
 
@@ -1020,4 +1301,10 @@ table, td, th {
   .modal {
     left: 7%;
   }
+}
+
+/* Mentions légales */
+
+.mentions-view {
+  margin-top: 15%;
 }
