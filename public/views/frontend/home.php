@@ -198,6 +198,7 @@
             </div>
         </div>
 
+<<<<<<< HEAD
         <!-- Footer -->
         <footer class="page-footer font-small home-footer special-color-dark pt-4">
 
@@ -233,5 +234,7 @@
     </section>
 </div>
     
+=======
+>>>>>>> ccdf36be80b1fdff0c6b6953ba9a51ca97115416
 <?php $content = ob_get_clean(); ?>
 <?php require('public/views/layoutHome.php'); ?>
