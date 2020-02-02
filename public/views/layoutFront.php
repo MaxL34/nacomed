@@ -18,6 +18,8 @@
         <!-- Google fonts-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo:400,400i">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/509603a5f9.js" crossorigin="anonymous"></script>
         <!-- OwlCarousel -->
         <link rel="stylesheet" href="./vendor/owl.carousel/assets/owl.carousel.css">
         <link rel="stylesheet" href="./vendor/owl.carousel/assets/owl.theme.default.min.css">
