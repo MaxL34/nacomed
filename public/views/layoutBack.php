@@ -13,6 +13,8 @@
         <meta name="description" content="<?= $meta_description; ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="all,follow">
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
         <!-- Google fonts-->
         <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo:400,400i">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700"> -->
@@ -20,13 +22,11 @@
         <link rel="stylesheet" href="./vendor/owl.carousel/assets/owl.carousel.css">
         <link rel="stylesheet" href="./vendor/owl.carousel/assets/owl.theme.default.min.css">
         <!-- theme stylesheet-->
-        <link rel="stylesheet" href="./css/style.blue.min.css" id="theme-stylesheet">
+        <link rel="stylesheet" href="./css/style.blue.css" id="theme-stylesheet">
         <!-- Custom stylesheet - for your changes-->
-        <link rel="stylesheet" href="./css/custom.min.css">
+        <link rel="stylesheet" href="./css/custom.css">
         <!-- Favicon-->
         <link rel="shortcut icon" href="./img/logo_nacomed_resized.webp">
-        <!-- Bootstrap CSS-->
-        <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
     </head>
 
     <body>
