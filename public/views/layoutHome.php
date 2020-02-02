@@ -16,10 +16,8 @@
         <!-- Bootstrap CSS-->
         <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
         <!-- Google fonts-->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo:400,400i">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-        <!-- FontAwesome -->
-        <script src="https://kit.fontawesome.com/509603a5f9.js" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo:400,400i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700"> -->
         <!-- OwlCarousel -->
         <link rel="stylesheet" href="./vendor/owl.carousel/assets/owl.carousel.css">
         <link rel="stylesheet" href="./vendor/owl.carousel/assets/owl.theme.default.min.css">
@@ -28,7 +26,7 @@
         <!-- Custom stylesheet - for your changes-->
         <link rel="stylesheet" href="./css/custom.min.css">
         <!-- Favicon-->
-        <link rel="shortcut icon" href="./img/logo_nacomed_resized.png">
+        <link rel="shortcut icon" href="./img/logo_nacomed_resized.webp">
         <!-- Open Graph Data Facebook -->
         <meta property="og:title" content="Page d'accueil de l'association Nacomed" />
         <meta property="og:description" content="<?= $og_title; ?>" />

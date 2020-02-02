@@ -39,15 +39,14 @@
             </div>
 
             <div class="nav_infos text-white col-lg-4">
-                <span class="asso_info"><i class="fas fa-angle-double-right"></i>Navigation éco-responsable</span>
-                <span class="asso_info"><i class="fas fa-angle-double-right"></i>Apprendre en naviguant</span>
-                <span class="asso_info"><i class="fas fa-angle-double-right"></i>Accomplir des missions scientifiques</span>
-                <span class="asso_info"><i class="fas fa-angle-double-right"></i>Partager son savoir</span>
+                <span class="asso_info">Navigation éco-responsable</span>
+                <span class="asso_info">Apprendre en naviguant</span>
+                <span class="asso_info">Accomplir des missions scientifiques</span>
+                <span class="asso_info">Partager son savoir</span>
             </div>
 
         </div>
 
-        <div class="scroll-btn link-scroll"><i class="fas fa-angle-down"></i></div>
     </section>
     <section class="scrollable" id="about2">
         <div class="d-flex h-100">
@@ -153,7 +152,7 @@
                 <div class="team-content">
                     <div class="row team-row">
                         <div class="text-center person_pic">
-                            <img  class="pic" src="./img/Team/cyrille_resized.png" alt="portrait de Cyrille Lorenzi, fondateur de nacomed"><br>
+                            <img  class="pic" src="./img/Team/cyrille_resized.webp" alt="portrait de Cyrille Lorenzi, fondateur de nacomed"><br>
                             <span>Cyrille Lorenzi</span><br>
                             <span>Fondateur et Capitaine</span><br>
                             <span>Tél : 06 41 25 99 31 / 06 09 09 17 91</span><br>
@@ -161,7 +160,7 @@
                         </div>
 
                         <div class="text-center person_pic">
-                            <img class="pic" src="./img/Team/Pauline_Panchairi.png" alt="portrait de Pauline Panchairi, développement projets scientifiques"><br>
+                            <img class="pic" src="./img/Team/Pauline_Panchairi.webp" alt="portrait de Pauline Panchairi, développement projets scientifiques"><br>
                             <span>Pauline Panchairi</span><br>
                             <span>Développement projets scientifiques</span><br>
                             <span>Tél : 06 70 96 25 73</span><br>
@@ -169,7 +168,7 @@
                         </div>
 
                         <div class="text-center person_pic">
-                            <img src="./img/Team/Jean_Reynaud.png" alt="portrait de Jean Reynaud, développement projets scientifiques"><br>
+                            <img src="./img/Team/Jean_Reynaud.webp" alt="portrait de Jean Reynaud, développement projets scientifiques"><br>
                             <span>Jean Reynaud</span><br>
                             <span>Développement projets scientifiques</span><br>
                             <span>Tél : 06 20 46 30 57</span><br>
@@ -179,7 +178,7 @@
 
                     <div class="row team-row2">
                         <div class="text-center person_pic">
-                            <img class="pic" src="./img/Team/Aude_Fromy.png" alt="portrait d'Aude Fromy, gestion de la logistique"><br>
+                            <img class="pic" src="./img/Team/Aude_Fromy.webp" alt="portrait d'Aude Fromy, gestion de la logistique"><br>
                             <span>Aude Fromy</span><br>
                             <span>Gestion de la logistique</span><br>
                             <span>Tél : 06 03 57 15 87</span><br>
@@ -187,7 +186,7 @@
                         </div>
 
                         <div class="text-center person_pic">
-                            <img class="pic" src="./img/Team/max_resized.png" alt="portrait de Maxime Lauvergeat, développement web"><br>
+                            <img class="pic" src="./img/Team/max_resized.webp" alt="portrait de Maxime Lauvergeat, développement web"><br>
                             <span>Maxime Lauvergeat</span><br>
                             <span>Développement du site web</span><br>
                             <span>Tél : 06 75 49 73 74</span><br>
