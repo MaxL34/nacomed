@@ -67,7 +67,7 @@
                             <div class="boat-info"><img src="/img/icons/seaweed.png" alt="plancton"><p class="about-title short-p">S'intégrer à des programmes de recherches</p></div>
                             <div class="boat-info"><div><img src="/img/icons/dolphin.png" alt="poisson"></div><p class="about-title short-p">Participer aux réseaux de sciences participatives en mer (OBSenMER, ...)</p></div>
                     </div>
-                    <div class="col-lg-2 logo-div"><img src="./img/logo_nacomed.png" alt="logo de nacomed" class="img-fluid rounded-circle d-block mx-auto about-logo"></div>
+                    <div class="col-lg-2 logo-div"><img src="./img/logo_nacomed.webp" alt="logo de nacomed" class="img-fluid rounded-circle d-block mx-auto about-logo"></div>
                     <div class="col-lg-5 ecology-boat">
                         <header class="text-center">
                             <h3 class="text-uppercase">Un navire écologique</h3>
@@ -129,7 +129,7 @@
                 
                 <div class="carousel">
                     <div id="owl-yaka" class="owl-carousel owl-theme">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka_exterieur2.webp" src="./img/yaka/yaka_exterieur2.jpg" alt="Vue profil gauche du Yaka">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka_exterieur2.webp" src="./img/yaka/yaka_exterieur2.webp" alt="Vue profil gauche du Yaka">
                         <img class="owl-lazy" data-src="./img/yaka/yaka_exterieur.webp" src="./img/yaka/yaka_exterieur.webp" alt="Vue 3/4 profil gauche du Yaka">
                         <img class="owl-lazy" data-src="./img/yaka/yaka2.webp" src="./img/yaka/yaka2.webp" alt="Vue sur la gouverne depuis le carré intérieur">
                         <img class="owl-lazy" data-src="./img/yaka/yaka_mat.webp" src="./img/yaka/yaka_mat.webp" alt="Vue sur le mât">
@@ -198,7 +198,6 @@
             </div>
         </div>
 
-<<<<<<< HEAD
         <!-- Footer -->
         <footer class="page-footer font-small home-footer special-color-dark pt-4">
 
@@ -234,7 +233,5 @@
     </section>
 </div>
     
-=======
->>>>>>> ccdf36be80b1fdff0c6b6953ba9a51ca97115416
 <?php $content = ob_get_clean(); ?>
 <?php require('public/views/layoutHome.php'); ?>

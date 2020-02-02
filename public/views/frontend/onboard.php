@@ -166,13 +166,8 @@
                         </thead>
 
                         <tbody>
-<<<<<<< HEAD
                            <!-- Mois  -->
                            <?php foreach ($month_prog as $month_name => $progs): ?>
-=======
-                            <!-- Mois de janvier -->
-                            <?php foreach ($month_prog as $month_name => $progs): ?>
->>>>>>> ccdf36be80b1fdff0c6b6953ba9a51ca97115416
                                 <tr>
                                     <td><?= $month_name; ?></td>
                                     <?php foreach ($progs as $prog):?>
@@ -186,11 +181,7 @@
                                         <td></td>
                                     <?php endforeach; ?>
                                 </tr>
-<<<<<<< HEAD
                             <?php endforeach; ?> 
-=======
-                            <?php endforeach; ?>    
->>>>>>> ccdf36be80b1fdff0c6b6953ba9a51ca97115416
                         </tbody>
                     </table>
                 </div>
@@ -234,10 +225,5 @@
 <script src="./vendor/owl.carousel/owl.carousel.js"></script>
 
 <!-- Google Map -->
-<<<<<<< HEAD
 <script src="./js/controllers/onboard.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=<?php include('./config.php'); echo $apiKey; ?>&callback=initMap">google.maps.event.addDomListener(window,'load', initMap);</script>
-=======
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=<?php include('./config.php'); echo $apiKey; ?>&callback=initMap"></script>
-<script src="./js/controllers/onboard.js"></script>
->>>>>>> ccdf36be80b1fdff0c6b6953ba9a51ca97115416
