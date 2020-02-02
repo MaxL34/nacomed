@@ -1018,6 +1018,7 @@ table, td, th {
   
   .nav_infos {
     left: 4%;
+    max-width: 50%;
   }
 
   .logo {
