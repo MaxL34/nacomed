@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.nacomed.fr/</loc>
+  <lastmod>2020-02-02T06:37:38+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.nacomed.fr/index.php</loc>
+  <lastmod>2020-02-02T06:37:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nacomed.fr/index.php?action=displayOnboard</loc>
+  <lastmod>2020-02-02T06:37:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nacomed.fr/index.php?action=displaySupport</loc>
+  <lastmod>2020-02-02T06:37:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nacomed.fr/index.php?action=displayContact</loc>
+  <lastmod>2020-02-02T06:37:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nacomed.fr/index.php?action=login</loc>
+  <lastmod>2020-02-02T06:37:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nacomed.fr/index.php?action=displayMentions</loc>
+  <lastmod>2020-02-02T06:37:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.nacomed.fr/public/pdf/imp%C3%A9ratifs_embarquement.pdf</loc>
+  <lastmod>2020-02-02T06:37:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nacomed.fr/public/pdf/monter_%C3%A0_bord_A_Z.pdf</loc>
+  <lastmod>2020-02-02T06:37:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nacomed.fr/public/pdf/copains_des_mers.pdf</loc>
+  <lastmod>2020-02-02T06:37:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nacomed.fr/public/pdf/carte_pratique_corse.pdf</loc>
+  <lastmod>2020-02-02T06:37:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.nacomed.fr/public/pdf/just_for_fun.pdf</loc>
+  <lastmod>2020-02-02T06:37:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
