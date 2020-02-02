@@ -129,13 +129,13 @@
                 
                 <div class="carousel">
                     <div id="owl-yaka" class="owl-carousel owl-theme">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka_exterieur2.jpg" src="./img/yaka/yaka_exterieur2.jpg" alt="Vue profil gauche du Yaka">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka_exterieur.jpeg" src="./img/yaka/yaka_exterieur.jpeg" alt="Vue 3/4 profil gauche du Yaka">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka2.jpeg" src="./img/yaka/yaka2.jpeg" alt="Vue sur la gouverne depuis le carré intérieur">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka_mat.jpeg" src="./img/yaka/yaka_mat.jpeg" alt="Vue sur le mât">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka_carre_interieur.jpeg" src="./img/yaka/yaka_carre_interieur.jpeg" alt="Vue du carré intérieur (table et banquette)">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka_banette_double.jpeg" src="./img/yaka/yaka_banette_double.jpeg" alt="Vue sur la banette double">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka_banettes_superposees.jpeg" src="./img/yaka/yaka_banette_double.jpeg" alt="Vue sur les banettes superposées">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka_exterieur2.webp" src="./img/yaka/yaka_exterieur2.jpg" alt="Vue profil gauche du Yaka">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka_exterieur.webp" src="./img/yaka/yaka_exterieur.webp" alt="Vue 3/4 profil gauche du Yaka">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka2.webp" src="./img/yaka/yaka2.webp" alt="Vue sur la gouverne depuis le carré intérieur">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka_mat.webp" src="./img/yaka/yaka_mat.webp" alt="Vue sur le mât">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka_carre_interieur.webp" src="./img/yaka/yaka_carre_interieur.webp" alt="Vue du carré intérieur (table et banquette)">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka_banette_double.webp" src="./img/yaka/yaka_banette_double.webp" alt="Vue sur la banette double">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka_banettes_superposees.webp" src="./img/yaka/yaka_banette_double.webp" alt="Vue sur les banettes superposées">
                     </div>
                 </div>   
             </div>
@@ -148,7 +148,7 @@
                     <h2 class="text-uppercase lined">L'&Eacute;QUIPE</h2>
                 </header>
                 <div class="row">
-                    <div class="contact-logo-div col-lg-12"><img src="./img/logo_nacomed.png" alt="logo de nacomed" class="img-fluid rounded-circle d-block mx-auto contact-logo"></div>
+                    <div class="contact-logo-div col-lg-12"><img src="./img/logo_nacomed.webp" alt="logo de nacomed" class="img-fluid rounded-circle d-block mx-auto contact-logo"></div>
                 </div>
                 <div class="team-content">
                     <div class="row team-row">

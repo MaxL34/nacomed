@@ -64,7 +64,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container home-navbar">
-                <a class="logo navbar-brand" href="./index.php"><img class="logo-nacomed" src="./img/logo_nacomed.png" alt="logo de nacomed" /></a>
+                <a class="logo navbar-brand" href="./index.php"><img class="logo-nacomed" src="./img/logo_nacomed.webp" alt="logo de nacomed" /></a>
                     <button class="menu_btn navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         Menu
                         <i class="fas fa-bars"></i>
