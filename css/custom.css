@@ -10,12 +10,6 @@
 
 /* MENU DE NAVIGATION */
 
-/* logo Nacomed */
-
-.logo-nacomed {
-  width : 19%;
-}
-
 /* PAGE D'ACCUEIL */
 
 /* Slider */
@@ -23,18 +17,23 @@
 .owl-prev {
   position: relative;
   left: -595px;
-  bottom: 400px;
+  bottom: 350px;
+  font-size: 64px;
+  color: #185EDF;
+
 }
 
 .owl-next {
   position: relative;
   left: 595px;
-  bottom: 400px;
+  bottom: 350px;
+  font-size: 64px;
+  color: #185EDF;
 }
 
 .owl-dots {
   position: relative;
-  bottom: 135px;
+  bottom: 110px;
 }
 
 /*.owl-carousel .owl-wrapper {
@@ -885,6 +884,12 @@ table, td, th {
   
 }
 
+@media screen and (max-width: 1200px) {
+  .logo-nacomed {
+    width: 65%;
+  }
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   #mainNav {
     border-bottom: 1px solid transparent;
@@ -1021,10 +1026,10 @@ table, td, th {
     margin-top: 15%;
   }
   
-  .nav_infos {
+  /*.nav_infos {
     left: 4%;
-    max-width: 50%;
-  }
+    max-width: 75%;
+  }*/
 
   .logo {
     position: relative;
@@ -1034,6 +1039,17 @@ table, td, th {
   .menu_btn {
     position: relative;
     margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 992px) {
+  .nav_infos {
+    bottom: 60px;
+  }
+
+  .welcome {
+    position: relative;
+    bottom: 85px;
   }
 }
 
