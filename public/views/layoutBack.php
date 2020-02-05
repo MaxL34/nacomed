@@ -22,9 +22,9 @@
         <link rel="stylesheet" href="./vendor/owl.carousel/assets/owl.carousel.css">
         <link rel="stylesheet" href="./vendor/owl.carousel/assets/owl.theme.default.min.css">
         <!-- theme stylesheet-->
-        <link rel="stylesheet" href="./css/style.blue.css" id="theme-stylesheet">
+        <link rel="stylesheet" href="./css/style.blue.min.css" id="theme-stylesheet">
         <!-- Custom stylesheet - for your changes-->
-        <link rel="stylesheet" href="./css/custom.css">
+        <link rel="stylesheet" href="./css/custom.min.css">
         <!-- Favicon-->
         <link rel="shortcut icon" href="./img/logo_nacomed_resized.webp">
     </head>
@@ -33,7 +33,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top onboard-nav" id="mainNav">
             <div class="container nav-div">
-                <a class="logo navbar-brand" href="../../.../../../index.php"><img class="logo-nacomed" src="../../../img/logo_nacomed.png" /></a>
+                <a class="logo navbar-brand" href="../../.../../../index.php"><img class="logo-nacomed" src="../../../img/logo_nacomed.webp" /></a>
                     <button class="menu_btn navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         Menu
                         <i class="fas fa-bars"></i>
