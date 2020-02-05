@@ -222,7 +222,7 @@
 <?php $content = ob_get_clean(); ?>
 <?php require('public/views/layoutFront.php'); ?>
     
-<script src="./vendor/owl.carousel/owl.carousel.js"></script>
+<script src="./vendor/owl.carousel/owl.carousel.min.js"></script>
 
 <!-- Google Map -->
 <script src="./js/controllers/onboard.js"></script>

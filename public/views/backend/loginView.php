@@ -40,12 +40,4 @@
 
 <!-- JavaScript files-->
 <script src="./js/login.js"></script>
-<<<<<<< HEAD
 <script src="./js/controllers/login.js"></script>
-=======
-<script>$(function() {
-            var login = Object.create(loginValid);
-            login.init();
-        });
-</script>
->>>>>>> ccdf36be80b1fdff0c6b6953ba9a51ca97115416
