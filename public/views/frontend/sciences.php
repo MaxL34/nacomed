@@ -37,7 +37,7 @@
         </div>
 
         <div class="row sciences-prog">
-            <h2 class="sc-prog-title">
+            <h2 class="sc-prog-title text-center">
                 Pour le programme 2020, NACOMED porte ses propres projets :
             </h2>
             
@@ -63,18 +63,22 @@
                 </div>
             </div>
 
-            <div class="row prog-pdf-section">
-                <p>
-                NACOMED offre également à la communauté scientifique la disponibilité de notre voilier et nos compétences maritimes pour la préparation et la conduite d’expéditions
-                scientifiques à la demande, contactez-nous !
-                </p>
+            <div class="row">
+                <div class="col-lg-12 prog-pdf-section text-center">
+                    <p class="invite-text">
+                    NACOMED offre également à la communauté scientifique la disponibilité de notre voilier et nos compétences maritimes pour la préparation et la conduite 
+                    d’expéditions scientifiques à la demande, contactez-nous !
+                    </p>
 
-                <p class="sc-pdf-text text-center">Retrouvez ci-joint les projets en détails</p>
-                <div class="row sc-prog-img">
-                    <a class="sc-prog-link" href="./public/pdf/prog_sc_2020_mail.pdf" target="_blank"><img src="../../img/prog-sc-2020-resized.webp"></a>
+                    <p class="sc-pdf-text text-center">Retrouvez ci-joint les projets en détails</p>
+                    <div class="prog-pdf-div">
+                        <a class="sc-prog-link" href="./public/pdf/prog_sc_2020_mail.pdf" target="_blank">
+                            <img class="sc-prog-img" src="../../img/prog-sc-2020-resized.webp"><br>
+                            <span class="link-help">(cliquez sur l'image)</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 

@@ -113,6 +113,11 @@ h2, h3 {
   width: 65%;
 }
 
+.hero {
+  min-height: 100vh;
+}
+
+
 /*SECTION 2 : PRESENTATION */
 
 .about-logo {
@@ -143,6 +148,10 @@ h2, h3 {
 
 .boat-info p {
   margin-bottom: 0px;
+}
+
+.boat-info img {
+  width: 64px;
 }
 
 .sized_img {
@@ -396,7 +405,19 @@ table, td, th {
 }
 
 .prog-pdf-section {
+  display: flex;
+  flex-direction: column;
   margin-top: 8%;
+}
+
+.prog-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.sc-prog2-title {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sc-pdf-text {
@@ -404,9 +425,19 @@ table, td, th {
   margin-top: 5%;
 }
 
-.sc-prog-img {
+.prog-pdf-div {
   margin-left: auto;
   margin-right: auto;
+}
+
+.invite-text {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sc-prog-img {
+  width: 230px;
 }
 
 /* PAGE CONTACT */
@@ -636,11 +667,12 @@ table, td, th {
   }
 
   #mainNav .navbar-nav > li.nav-item > a {
+    font-size: 20px;
     color: #fff;
   }
 
   .navbar-expand-lg .navbar-collapse {
-    margin-left: 14%;
+    margin-left: 17%;
   }
 
   .logout {
@@ -657,6 +689,11 @@ table, td, th {
   .navbar-expand-lg .navbar-collapse {
     margin-left: 15%;
   }
+
+  .login {
+    left: 6%;
+  }
+
 }
 
 @media screen and (min-width: 1400px) {
@@ -719,8 +756,7 @@ table, td, th {
 
   .login {
     left: 2%;
-  }
-  
+  }  
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -745,11 +781,11 @@ table, td, th {
   }
 
   #navbarResponsive {
-    margin-left: 19%;
+    margin-left: 18%;
   }
 
   .login {
-    left: 2%;
+    left: 0%;
   }
 
   .login-div {
@@ -763,10 +799,16 @@ table, td, th {
   }
 }
 
+@media screen and (min-width: 375px) and (max-width: 992px) {
+  .login-div {
+    margin-top: 60%;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 424px) {
   .hero {
     min-height: 43vh;
-    top: 235px;
+    top: 162px;
   }
 
   #captain-speech {
@@ -777,8 +819,8 @@ table, td, th {
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
   .hero {
-    min-height: 43vh;
-    top: 235px;
+    min-height: 56vw;
+    top: 162px;
   }
 
   #captain-speech {
@@ -933,36 +975,9 @@ table, td, th {
     padding-right: 0px;
   }
 
-  /* PAGE : EMBARQUEMENT */
-
-  @media screen and (min-width: 320px) and (max-width: 375px) {
-    .eco-volunteer {
-      margin-top: 280px;
-    }
-  }
-
-  @media screen and (min-width: 376px) and (max-width: 992px) {
-    .eco-volunteer {
-      margin-top: 250px;
-    }
-  }
-
-/* PAGE : SCIENCES */
-
-@media screen and (min-width: 320px) and (max-width: 425px) {
-  .infos-sciences {
-    margin-top: 290px;
-  }
-}
-
-  /* PAGE : NOUS SOUTENIR */
-  .donation {
+   /* PAGE : NOUS SOUTENIR */
+   .donation {
     margin-top: 40%;
-  }
-
-  /* PAGE : LOGIN */
-  .login-div {
-    margin-top: 35%;
   }
 
   /* TABLEAU DE BORD ADMIN */
@@ -992,6 +1007,34 @@ table, td, th {
   }
 }
 /* FIN MAX-WIDTH: 992PX */
+
+@media screen and (min-width: 320px) and (max-width: 992px) {
+  .logo-nacomed {
+    width: 135px;
+  }
+}
+
+/* PAGE : EMBARQUEMENT */
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .eco-volunteer {
+    margin-top: 280px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 992px) {
+  .eco-volunteer {
+    margin-top: 250px;
+  }
+}
+
+/* PAGE : SCIENCES */
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .infos-sciences {
+    margin-top: 290px;
+  }
+}
 
 /*BOUTON HELLOASSO */
 
@@ -1070,24 +1113,36 @@ table, td, th {
 
 /* PAGE ACCUEIL */
 
+@media screen and (min-height: 768px) {
+  .hero {
+    min-height: 55vw;
+  }
+}
+
+@media screen and (min-height: 1024px) and (max-height: 1400px) {
+  .hero {
+    min-height: 575px;
+  }
+}
+
 @media screen and (min-width: 320px) {
   .welcome {
     position: relative;
-    bottom: 75px;
+    bottom: 50px;
   }
 }
 
 @media screen and (min-width: 375px) {
   .welcome {
     position: relative;
-    bottom: 70px;
+    bottom: 35px;
   }
 }
 
 @media screen and (min-width: 425px) {
   .welcome {
     position: relative;
-    bottom: 40px;
+    bottom: 20px;
   }
 }
 
@@ -1118,11 +1173,29 @@ table, td, th {
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .welcome {
     position: relative;
-    bottom: 10px;
+    top: 66px;
   }
 
   #home1 {
-    min-height: 45vh;
+    min-height: 57vw;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1799px) {
+  .hero {
+    min-height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1800px) and (max-width: 1919px) {
+  .hero {
+    min-height: 57vw;
+  }
+}
+
+@media screen and (min-width: 1920px){
+  .hero {
+    min-height: 100vh;
   }
 }
 

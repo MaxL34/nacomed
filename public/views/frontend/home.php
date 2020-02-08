@@ -29,7 +29,7 @@
 
         <div class="position-relative z-index-1">
             <div class="container welcome text-center text-white">
-                <p class="font-italic lead first-p">
+                <p class="font-italic first-p">
                     Explorons ensemble de nouveaux horizons pour une conscience maritime responsable
                 </p>
             </div>
