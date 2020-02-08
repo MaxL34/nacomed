@@ -21,10 +21,10 @@
         <!-- OwlCarousel -->
         <link rel="stylesheet" href="./vendor/owl.carousel/assets/owl.carousel.css">
         <link rel="stylesheet" href="./vendor/owl.carousel/assets/owl.theme.default.min.css">
-        <!-- theme stylesheet-->
-        <link rel="stylesheet" href="./css/style.blue.min.css" id="theme-stylesheet">
         <!-- Custom stylesheet - for your changes-->
-        <link rel="stylesheet" href="./css/custom.min.css">
+        <link rel="stylesheet" href="./css/custom.css">
+        <!-- theme stylesheet-->
+        <link rel="stylesheet" href="./css/style.blue.css" id="theme-stylesheet">
         <!-- Favicon-->
         <link rel="shortcut icon" href="./img/logo_nacomed_resized.webp">
         <!-- Google Tag Manager -->
@@ -66,6 +66,9 @@
                             <a class="nav-link" href="../../../index.php?action=displayOnboard">Embarquement</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="./index.php?action=displaySciences">Sciences</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="../../../index.php?action=displaySupport">Nous soutenir</a>
                         </li>
                         <li class="nav-item">
@@ -77,10 +80,12 @@
                         <?php
                             if (isset($_SESSION['user'])) {
                                 $sessionUser = $_SESSION['user'];
-                                echo '<li class="nav-item admin-link"><a class="nav-link" href="../../../index.php?action=displayAdmin">Administration</a></li>';
-                                echo '<li class="nav-item logout"><a id ="signOut_link" class="nav-link" href="../../../index.php?action=signOut">Déconnexion</a></li>';
+                                echo '<div class="sign-links">
+                                        <li class="nav-item admin-link"><a class="signin-link-front" href="./index.php?action=displayAdmin">Admin</a></li>
+                                        <li class="nav-item logout"><a id="signOut_link" class="signOut_link-front" href="./index.php?action=signOut">Signout</a></li>
+                                      </div>';
                             } else {
-                                echo '<li class="nav-item login"><a class="nav-link" href="../../../index.php?action=login">Connexion</a></li>';
+                                echo '<li class="nav-item login"><a class="nav-link" href="../../../index.php?action=login">Admin</a></li>';
                             }
                         ?>
                     </ul>

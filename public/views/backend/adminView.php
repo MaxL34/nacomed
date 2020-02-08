@@ -17,7 +17,7 @@
     </div>
 
     <div class="row">
-        <div class="col-lg-6 text-center">
+        <div class="col-lg-6 text-center map_mgmt">
             <header>
                 <h4>Gestion de la map</h4>
                     <button id="map-mgmt">Gérer</button>

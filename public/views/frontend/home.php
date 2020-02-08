@@ -24,30 +24,28 @@
                     <span id="contact">L'équipe</span>
                     <li class="contact-5"></li>
                 </a>
-                
             </ul>
         </nav>
 
         <div class="position-relative z-index-1">
             <div class="container welcome text-center text-white">
-                <p class="font-italic lead">Bienvenue sur le site de</p>
-                <h1 class="text-uppercase my-4">NACOMED</h1>
-                <h2>Navires d'&Eacute;tudes Corse Méditerranée</h2>
-                <p class="font-italic lead">Convaincu que pour une mer plus sûre et plus propre, la bonne volonté doit être accompagnée de connaissances du milieu et de compétences de
-                                            marin ; Nacomed met à disposition une flotte de navires écoles à vocation écologique, pour tous et au service des sciences de la mer.
+                <p class="font-italic lead first-p">
+                    Explorons ensemble de nouveaux horizons pour une conscience maritime responsable
                 </p>
             </div>
-
-            <div class="nav_infos text-white col-lg-4">
-                <span class="asso_info">Navigation éco-responsable</span>
-                <span class="asso_info">Apprendre en naviguant</span>
-                <span class="asso_info">Accomplir des missions scientifiques</span>
-                <span class="asso_info">Partager son savoir</span>
-            </div>
-
         </div>
-
     </section>
+
+    <section id="captain-speech">
+        <div class="container text-center">
+            <h2 class="captain-speech-title">Le mot du Capitaine</h2>
+                <p class="font-italic">
+                        "Convaincu que pour une mer plus sûre et plus propre, la bonne volonté doit être accompagnée de connaissances du milieu et de compétences de marin ; Nacomed met 
+                        à disposition une flotte de navires écoles à vocation écologique, pour tous et au service des sciences de la mer"
+                </p>
+        </div>
+    </section>
+
     <section class="scrollable" id="about2">
         <div class="d-flex h-100">
             <div class="container about_div">
@@ -56,7 +54,7 @@
                 </header>
 
                 <div class="row">
-                    <div class="col-lg-5 science-boat">
+                    <div class="col-lg-6 science-boat">
                         <header class="text-center">
                             <h3 class="text-uppercase">Un navire scientifique</h3>
                                 <p class="lined">&Eacute;tudier le milieu marin</p>
@@ -66,8 +64,7 @@
                             <div class="boat-info"><img src="/img/icons/seaweed.png" alt="plancton"><p class="about-title short-p">S'intégrer à des programmes de recherches</p></div>
                             <div class="boat-info"><div><img src="/img/icons/dolphin.png" alt="poisson"></div><p class="about-title short-p">Participer aux réseaux de sciences participatives en mer (OBSenMER, ...)</p></div>
                     </div>
-                    <div class="col-lg-2 logo-div"><img src="./img/logo_nacomed.webp" alt="logo de nacomed" class="img-fluid rounded-circle d-block mx-auto about-logo"></div>
-                    <div class="col-lg-5 ecology-boat">
+                    <div class="col-lg-6 ecology-boat">
                         <header class="text-center">
                             <h3 class="text-uppercase">Un navire écologique</h3>
                             <p class="lined">Préserver et sensibiliser</p>
@@ -146,51 +143,39 @@
                 <header class="text-center mb-5">
                     <h2 class="text-uppercase lined">L'&Eacute;QUIPE</h2>
                 </header>
-                <div class="row">
-                    <div class="contact-logo-div col-lg-12"><img src="./img/logo_nacomed.webp" alt="logo de nacomed" class="img-fluid rounded-circle d-block mx-auto contact-logo"></div>
-                </div>
+
                 <div class="team-content">
                     <div class="row team-row">
                         <div class="text-center person_pic">
-                            <img  class="pic" src="./img/Team/cyrille_resized.webp" alt="portrait de Cyrille Lorenzi, fondateur de nacomed"><br>
+                            <img  class="pic" src="./img/Team/cyrille.webp" alt="portrait de Cyrille Lorenzi, fondateur de nacomed"><br>
                             <span>Cyrille Lorenzi</span><br>
                             <span>Fondateur et Capitaine</span><br>
-                            <span>Tél : 06 41 25 99 31 / 06 09 09 17 91</span><br>
-                            <span>Mails : <a href="mailto:nacomed@nacomed.fr">nacomed@nacomed.fr</a></span>
                         </div>
 
                         <div class="text-center person_pic">
-                            <img class="pic" src="./img/Team/Pauline_Panchairi.webp" alt="portrait de Pauline Panchairi, développement projets scientifiques"><br>
+                            <img class="pic" src="./img/Team/pauline.webp" alt="portrait de Pauline Panchairi, développement projets scientifiques"><br>
                             <span>Pauline Panchairi</span><br>
                             <span>Développement projets scientifiques</span><br>
-                            <span>Tél : 06 70 96 25 73</span><br>
-                            <span>Mail : <a href="mailto:ecosciences@nacomed.fr">ecosciences@nacomed.fr</a></span>
                         </div>
 
                         <div class="text-center person_pic">
-                            <img src="./img/Team/Jean_Reynaud.webp" alt="portrait de Jean Reynaud, développement projets scientifiques"><br>
+                            <img class="pic" src="./img/Team/jean.webp" alt="portrait de Jean Reynaud, développement projets scientifiques"><br>
                             <span>Jean Reynaud</span><br>
                             <span>Développement projets scientifiques</span><br>
-                            <span>Tél : 06 20 46 30 57</span><br>
-                            <span>Mail : <a href="mailto:ecosciences@nacomed.fr">ecosciences@nacomed.fr</a></span>
                         </div>
                     </div>
 
                     <div class="row team-row2">
                         <div class="text-center person_pic">
-                            <img class="pic" src="./img/Team/Aude_Fromy.webp" alt="portrait d'Aude Fromy, gestion de la logistique"><br>
+                            <img class="pic" src="./img/Team/aude.webp" alt="portrait d'Aude Fromy, gestion de la logistique"><br>
                             <span>Aude Fromy</span><br>
                             <span>Gestion de la logistique</span><br>
-                            <span>Tél : 06 03 57 15 87</span><br>
-                            <span>Mail : <a href="mailto:avitaillement@nacomed.fr">avitaillement@nacomed.fr</a></span>
                         </div>
 
                         <div class="text-center person_pic">
-                            <img class="pic" src="./img/Team/max_resized.webp" alt="portrait de Maxime Lauvergeat, développement web"><br>
+                            <img class="pic" src="./img/Team/max.webp" alt="portrait de Maxime Lauvergeat, développement web"><br>
                             <span>Maxime Lauvergeat</span><br>
                             <span>Développement du site web</span><br>
-                            <span>Tél : 06 75 49 73 74</span><br>
-                            <span>Mail : <a href="mailto:mlauvergeat@gmail.com">mlauvergeat@gmail.com</a></span>
                         </div>
                     </div>
                 </div>

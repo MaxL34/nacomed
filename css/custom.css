@@ -1,5 +1,37 @@
 /* your styles go here */
 
+/* POLICES */
+
+@font-face {
+  font-family: "JosefinSans";
+  src: url(../fonts/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "JosefinSans-Light";
+  font-weight: lighter;
+  src: url(../fonts/JosefinSans-Light.ttf);
+}
+
+@font-face {
+  font-family: "JosefinSans-SemiBold";
+  src: url(../fonts/JosefinSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "JosefinSans-Bold";
+  font-weight: bold;
+  src: url(../fonts/JosefinSans-Bold.ttf);
+}
+
+body {
+  font-family: JosefinSans;
+}
+
+h2, h3 {
+  font-family: JosefinSans-Bold;
+}
+
 /* HEADER */
 
 /* Menu de navigation */
@@ -8,11 +40,39 @@
   margin-left: 0;
 }
 
+.nav-link {
+  font-family: JosefinSans-Light;
+}
+
+.sign-links {
+  position: relative;
+  left: 20%;
+}
+
+.signin-link-home, .signOut_link-home {
+  font-size: 18px;
+  color: white;
+}
+
+.signin-link-front, .signOut_link-front {
+  font-size: 18px;
+  color: black;
+}
+
+.signin-link-back, .signOut_link-back {
+  font-size: 18px;
+  color: black;
+}
+
 /* MENU DE NAVIGATION */
 
 /* PAGE D'ACCUEIL */
 
 /* Slider */
+
+#mainNav .navbar-nav > li.nav-item > a:hover {
+  color: #677dbd;
+}
 
 .owl-prev {
   position: relative;
@@ -36,59 +96,24 @@
   bottom: 110px;
 }
 
-/*.owl-carousel .owl-wrapper {
-  display: flex !important;
-}*/
-
 .owl-carousel .owl-item img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
 }
 
-/* Section 1 : Accueil */
+/* SECTION 1 : ACCUEIL */
+
+.home1-text {
+  position: relative;
+  top: 145px;;
+}
 
 .welcome {
-  margin-bottom: 55px;
-  background: rgba(17, 65, 86, 0.5);
-  opacity: 0.9;
-  border-radius: 80px;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  width: 65%;
 }
 
-.nav_infos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: rgba(17, 65, 86, 0.5);
-  border-radius: 25px;
-  opacity: 0.9;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.fa-angle-double-right {
-   padding-right: 5px;
-}
-
-.link-down {
-  color: white;
-  z-index: 2;
-  position: relative;
-  top: 55%;
-  right: 29%;
-}
-
-.position-relative {
-  top: 4%;
-}
-
-/*Section 2 Présentation */
+/*SECTION 2 : PRESENTATION */
 
 .about-logo {
   position: relative;
@@ -103,10 +128,6 @@
 .about-title {
   text-align: left;
   padding-left: 25px;
-}
-
-.fa-angle-right {
-  padding-right: 10px;
 }
 
 .about-title img {
@@ -159,14 +180,14 @@
 }
 
 .school-boat {
-  margin-top: 3%;
+  margin-top: 7%;
 }
 
 .school-boat-text {
   margin-top: 2%;
 }
 
-/* Section 3 : Le navire */
+/* SECTION 3 : LE NAVIRE */
 
 .owl-carousel.owl-loaded.owl-drag {
   display: flex;
@@ -187,34 +208,7 @@
   margin: auto;
 }
 
-/* Section 4 : détails techniques */
-
-.boat-details {
-  margin-left: 0;
-  margin-right: 0;
-  max-width: 100%;
-}
-
-.boat-plan-div {
-  display: flex;
-}
-
-.boat-plan-div a {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
-.details-text-div {
-  margin-top: 50px;
-}
-
-.details-text {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*Section pagination */
+/* SECTION PAGINATION */
 .onepage-pagination span {
   position: relative;
   left: -150px;
@@ -244,7 +238,7 @@
   display: block;
 }
 
-/* Section contact */
+/* SECTION CONTACT */
 
 .contact-logo-div {
   display: flex;
@@ -273,6 +267,7 @@
 
 .pic {
   width: 121px;
+  margin-bottom: 20px;
 }
 
 .team-row2 {
@@ -280,17 +275,6 @@
 }
 
 /* FIN PAGE D'ACCUEIL*/
-
-/* PAGE ACTUALITES */
-
-.welcome-news, .welcome-map, .events-map {
-  margin-top: 10%;
-  margin-bottom: 5%;
-}
-
-.image-news img {
-  width: 100%;
-}
 
 /* PAGE EMBARQUEMENT */
 
@@ -379,7 +363,7 @@ table, td, th {
   width: 16%;
 }
 
-/* Map */
+/* MAP */
 
 .onboard-events-map {
   margin-top: 5%;
@@ -406,12 +390,6 @@ table, td, th {
 
 /* FIN PAGE CONTACT */
 
-/* PAGE TAVERNE */
-
-.conteneur-tavern {
-  margin-bottom: 27%;
-}
-
 /* PAGE D'ADMINISTRATION */
 
 .admin_interface, .news-creation, .login-div {
@@ -429,161 +407,6 @@ table, td, th {
 
 /* FIN PAGE D'ADMINISTRATION */
 
-/* PAGE DE CREATION DE NEWS */
-
-.article_form {
-  width : 100%
-}
-
-/* FIN PAGE DE CREATION DE NEWS */
-
-/* PAGE DE TOUTES LES NEWS */
-
-.post-list {
-  padding-bottom: 3%;
-  border-bottom: 1px solid gray;
-  padding-top: 5%;
-}
-
-.post-item {
-  margin-bottom: 5%;
-}
-
-/* PAGE DE NEWS (UNE NEWS) */
-
-/* Bouton partage FB */
-
-/*.fb-share-button, .fb_iframe_widget {
-  position: relative;
-  display: inline-block;
-  padding: 0.8rem 1rem;
-  padding-left: 2.2rem;
-
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Rum Raisin', sans-serif;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #363636;
-  
-}*/
-
-.fb-share-button, .fb_iframe_widget {
-  position: fixed;
-  display: block;
-  height: 1.2rem;
-  width: 1.2rem;
-  top:47.5vh;
-  bottom: 1rem;
-  left: 0.6rem;
-
-  background-image: url(../img/facebook.svg);
-  background-size: 1.2rem 1.2rem;
-  background-repeat: no-repeat;
-}
-
-.fb-xfbml-parse-ignore {
-  position: fixed;
-  top: 50vh;
-}
-
-.news-display {
-  display: flex;
-  flex-direction: column;
-}
-
-.news-view {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10%;
-}
-
-.news-img {
-  display: flex;
-  margin-bottom: 10%
-}
-
-.news-img img {
-  position: relative;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.news-heading {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 7%;
-}
-
-#add_com {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-}
-
-#com_form {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
-}
-
-#com_form label {
-  display: block;
-  width: 150px;
-  float: left;
-}
-
-.sub-btn {
-  display: flex;
-}
-
-#com_submit_btn {
-  margin-left: auto;
-}
-
-#comments-area {
-  background-color: cornflowerblue;
-  margin-top: 5%;
-}
-
-.com_heading {
-  text-align: center;
-  margin-top: 5%;
-}
-
-.comment_content {
-  background-color: aliceblue;
-  padding: 25px;
-  border-radius: 25px;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-.video {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* PAGE D'EDITION DES NEWS */
-
-.post-preview {
-  display: flex;
-  flex-direction: column;
-}
-
-.post {
-  height: 300px;
-  overflow: hidden;
-}
-
-.edit-btn-div {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4%;
-  margin-bottom: 5%
-}
-
 /* PAGE DES EVENTS DE LA MAP */
 
 .events table {
@@ -598,44 +421,10 @@ table, td, th {
   justify-content: space-around;
 }
 
-/* PAGE DES COMMENTAIRES SIGNALES */
-
-.reported_comments {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin-top: 20%;
-}
-
-.rep-coms-list {
-  margin-top: 10%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.reported-com {
-  display: flex;
-  flex-direction: column;
-}
-
-.del_btn {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.modal_del_content {
-  display: flex;
-  flex-direction: column;
-}
-
-.comment_censored {
-  text-decoration: line-through;
-}
-
 /* PAGE NOUS SOUTENIR */
 
 #haWidget {
-  margin-top: 13%;
+  margin-top: 25%;
 }
 
 .helloForm {
@@ -713,7 +502,7 @@ table, td, th {
   margin-left: auto;
 }
 
-/* Lien de retour vers le header */
+/* LIEN DE RETOUR VERS LE HAUT DE PAGE */
 
 #header_link {
   position: fixed;
@@ -722,16 +511,22 @@ table, td, th {
   z-index: 100;
 }
 
-/* Vue des erreurs */
+/* MENTIONS LEGALES */
+
+.mentions-view {
+  margin-top: 15%;
+}
+
+/* VUE ERREURS */
 
 .error-message {
   margin-top: 250px;
   text-align: center;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 
-/* Menu de navigation*/
+/* MENU DE NAVIGATION */
 
 .home-navbar, .nav-div {
   margin-left: auto;
@@ -739,66 +534,41 @@ table, td, th {
 }
 
 .support-link {
-  width: 145px;
+  width: 100%;
 }
 
 #mainNav {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
   background-color: white;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
+}
   
-  #mainNav .navbar-brand {
+ #mainNav .navbar-brand {
   font-weight: 800;
   color: #343a40;
-  }
+ }
   
-  #mainNav .navbar-toggler {
+#mainNav .navbar-toggler {
   font-size: 12px;
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
   color: #677dbd;
-  bottom: 80px;
-  }
+}
   
   #mainNav .navbar-nav > li.nav-item > a {
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
   }
   
   .login {
     position: relative;
-    left: 30%;
-  }
-
-  .admin-link, .logout {
-    position: relative;
     left: 15%;
   }
 
-@media screen and (max-height: 630px) {
-  .position-relative{
-    top: 130px;
-  }
-}
-
-@media screen and (min-height: 630px) and (max-height: 860px) {
-  .position-relative{
-    top: 130px;
-  }
-}
-
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  #mainNav .navbar-toggler {
-    bottom: 55px;
-  }
-}
-
-@media screen and (min-width: 640px) and (max-width: 992px) {
   #mainNav .navbar-toggler {
     bottom: 55px;
   }
@@ -814,12 +584,16 @@ table, td, th {
     color: #fff;
   }
 
-  #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: #677dbd;
+  #mainNav .navbar-nav .signin-link .signOut-link, a {
+    font-size: 12px;
   }
 
   .navbar-expand-lg .navbar-collapse {
-    margin-left: 28%;
+    margin-left: 24%;
+  }
+
+  .nav-item .nav-link .support-link {
+    width: 239px;
   }
 }
 
@@ -834,7 +608,7 @@ table, td, th {
   }
 
   .navbar-expand-lg .navbar-collapse {
-    margin-left: 27%;
+    margin-left: 20%;
   }
 
   .logout {
@@ -843,7 +617,13 @@ table, td, th {
   }
 
   .login {
-    left: 20%;
+    left: 4%;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1800px) {
+  .navbar-expand-lg .navbar-collapse {
+    margin-left: 20%;
   }
 }
 
@@ -857,7 +637,7 @@ table, td, th {
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
 
   #mainNav {
-    border-bottom: 1px solid transparent;
+    border-bottom: none;
     background: transparent;
   }
 
@@ -876,80 +656,272 @@ table, td, th {
 
   #mainNav .navbar-nav > li.nav-item > a {
     color: #fff;
+    font-size: 18px;
+  }
+
+  .logo .navbar-brand {
+    position: relative;
+    right: 10%;
   }
 
   .login {
-    left: 12%;
+    left: 2%;
   }
   
 }
 
-@media screen and (max-width: 1200px) {
-  .logo-nacomed {
-    width: 65%;
-  }
-}
-
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   #mainNav {
-    border-bottom: 1px solid transparent;
     background: transparent;
-  }
-
-  #mainNav .navbar-brand {
-    padding: 10px 20px;
-    color: #fff;
-    position: relative;
-    left: -6%;
-  }
-
-  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: rgba(255, 255, 255, 0.8);
+    border-bottom: none;
   }
 
   #mainNav .navbar-nav > li.nav-item > a {
     color: #fff;
+    font-size: 18px;
   }
 
-  #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: rgba(255, 255, 255, 0.8);
+  #mainNav .navbar-nav > li.nav-item > a {
+    color: #fff;
+    font-size: 15px;
   }
 
-  .admin-link {
-    left: 0%;
+  .logo-nacomed {
+    position: relative;
+    right: 12%;
   }
 
-  .logout {
-    left: -14.5%;
-    top: 30px;
+  #navbarResponsive {
+    margin-left: 19%;
   }
 
   .login {
     left: 2%;
   }
 
-  .navbar-expand-lg .navbar-collapse {
-    margin-left: 15%;
+  .login-div {
+    margin-top: 20%;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 340px) {
+  .first-p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .hero {
+    min-height: 43vh;
+    top: 235px;
+  }
+
+  #captain-speech {
+    padding-top: 25%;
+    padding-bottom: 0;
+  }
+
+}
+
+/* MAX-WIDTH : 992PX */
+@media screen and (max-width: 992px) {
+
+  /* PAGE D'ACCUEIL */
+  /* MENU DE NAVIGATION */
+  #mainNav .navbar-nav > li.nav-item > a {
+    font-size: 15px;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    margin-left: 0;
+  }
+
+  .sign-links {
+    left: 0%;
+  }
+
+  .signin-link-home, .signOut_link-home {
+    font-size: 18px;
+    color: #677dbd;
+  }
+  
+  .signin-link-front, .signOut_link-front {
+    font-size: 18px;
+    color: black;
+  }
+  
+  .signin-link-back, .signOut_link-back {
+    font-size: 18px;
+    color: black;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .login {
+    left: 0;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+    position: relative;
+    bottom: 10%;
+  }
+
+  .logo {
+    position: relative;
+    margin-right: auto;
+  }
+  
+  .menu_btn {
+    position: relative;
+    margin-left: auto;
+  }
+
+  .login {
+    left: 0%;
+  }
+
+  .admin-link, .logout {
+    left: 0;
+  }
+
+  #mainNav .navbar-nav > li.nav-item > a {
+    font-size: 15px;
+  }
+
+  /* SECTION 2 */
+  .logo-div {
+    display: none;
+  }
+
+  .sized_img {
+    margin: 0;
+  }
+
+  .science-boat, .ecology-boat {
+    margin-bottom: 70px;
+  }
+
+  .ecology-boat {
+    margin-top: 70px;
+  }
+
+  .boat-plan {
+    width: 100%;
+  }
+
+  .details-text {
+    margin-left: 0;
+  }
+
+  /* SECTION 3 */
+  /* CAROUSSEL */
+  .owl-lazy {
+    height: 300px;
+  } 
+
+  .owl-prev {
+    left: -290px;
+    bottom: 250px;
+  }
+
+  .owl-next {
+    left: 290px;
+    bottom: 250px;
+  }
+
+  /* SECTION 4 : détails techniques navire */
+  .boat-plan-div {
+    display: flex;
+  }
+  
+  .boat-plan {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .details-text {
+    margin-left: 0;
+  }
+
+  /* SECTION 5 : contact */
+  .contact-logo-div {
+    display: flex;
+  }
+  
+  .contact-logo {
+    width: 20%;
+    height: 67%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .person_infos {
+    padding-left: 0px;
+  }
+
+  .person_pic {
+    padding-right: 0px;
+  }
+
+  /* PAGE : NOUS SOUTENIR */
+  .donation {
+    margin-top: 40%;
+  }
+
+  /* PAGE : LOGIN */
+  .login-div {
+    margin-top: 35%;
+  }
+
+  /* TABLEAU DE BORD ADMIN */
+  .admin_interface {
+      margin-top: 55%;
+    }
+
+  /* PAGE DE GESTION DE LA MAP */
+  .welcome-map, .events-map {
+    margin-top: 55%;
+  }
+
+  /* PAGE DE GESTION DU PROGRAMME */
+  .welcome-program {
+    margin-top: 55%;
+  }
+
+  /* PAGE CONTACT */
+  #sendMessageButton {
+    left: 35%;
+    bottom: 30px;
+  }
+
+  /* MODAL */
+  .modal {
+    left: 7%;
+  }
+}
+/* FIN MAX-WIDTH: 992PX */
 
 /*BOUTON HELLOASSO */
 
-@media screen and (max-height: 630px) {
+@media screen and (min-width: 320px) and (max-width : 424px) {
   #haWidget {
-    margin-top: 19%;
+    margin-top: 80%;
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  #haWidget {
-    margin-top: 18%;
-  }
-}
-
-@media screen and (min-width: 340px) and (max-width: 992px) {
+@media screen and (min-width: 425px) and (max-width : 1023px) {
   #haWidget {
     margin-top: 40%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #haWidget {
+    margin-top: 20%;
   }
 }
 
@@ -996,88 +968,99 @@ table, td, th {
   #mainNav.is-fixed .navbar-nav > li.nav {
     color: black;
   }
-}
 
-@media screen and (max-width: 992px) {
-  .support-link {
-    width: 100%;
-  }
-
-  .login {
-    left: 0%;
-  }
-
-  .admin-link, .logout {
-    left: 0;
+  .first-p {
+    font-size: 28px;
   }
 }
 
 /* PAGE ACCUEIL */
-/* Section 1 : accueil */
 
-@media (max-width: 992px) {
-  .navbar-collapse {
-    text-align: center;
-    position: relative;
-    bottom: 10%;
-  }
-
-  .hero {
-    margin-top: 15%;
-  }
-  
-  /*.nav_infos {
-    left: 4%;
-    max-width: 75%;
-  }*/
-
-  .logo {
-    position: relative;
-    margin-right: auto;
-  }
-  
-  .menu_btn {
-    position: relative;
-    margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 992px) {
-  .nav_infos {
-    bottom: 60px;
-  }
-
+@media screen and (min-width: 320px) {
   .welcome {
     position: relative;
-    bottom: 85px;
+    bottom: 75px;
   }
 }
 
-/* Section 2 */
+@media screen and (min-width: 375px) {
+  .welcome {
+    position: relative;
+    bottom: 70px;
+  }
+}
 
-@media (max-width: 992px) {
-  .logo-div {
-    display: none;
+@media screen and (min-width: 425px) {
+  .welcome {
+    position: relative;
+    bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .welcome {
+    position: relative;
+    bottom: 0px;
   }
 
-  .sized_img {
-    margin: 0;
+  #captain-speech {
+    margin-top: 15%;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .hero {
+    top: 160px;
+    min-height: 50vh;
   }
 
-  .science-boat, .ecology-boat {
-    margin-bottom: 50px;
+  .captain-speech {
+    top: 125px;
   }
 
-  .boat-plan {
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .welcome {
+    position: relative;
+    bottom: 10px;
+  }
+
+  #home1 {
+    min-height: 75vh;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .welcome {
     width: 100%;
   }
 
-  .details-text {
-    margin-left: 0;
+  .first-p {
+    font-size: 50px;
+  }
+
+  #mainNav .navbar-nav > li.nav-item > a {
+    font-size: 45px;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    margin-left: 18%;
+  }
+
+  body {
+    font-size: 2rem;
   }
 }
 
-/* Section 3 : slider */
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .nav_infos {
+    bottom: 60px;
+  }
+}
+
+/* SECTION 3 : SLIDER */
 
 @media screen and (max-width: 1400px) {
   .owl-prev {
@@ -1086,22 +1069,6 @@ table, td, th {
 
   .owl-next {
     left: 410px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .owl-lazy {
-    height: 300px;
-  }
-
-  .owl-prev {
-    left: -290px;
-    bottom: 250px;
-  }
-
-  .owl-next {
-    left: 290px;
-    bottom: 250px;
   }
 }
 
@@ -1141,48 +1108,6 @@ table, td, th {
   }
 }
 
-/* Section 4 : détails techniques navire */
-
-@media screen and (max-width: 992px) {
-  .boat-plan-div {
-    display: flex;
-  }
-  
-  .boat-plan {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .details-text {
-    margin-left: 0;
-  }
-}
-
-
-/* Section 5 : contact */
-
-@media (max-width: 992px) {
-  .contact-logo-div {
-    display: flex;
-  }
-  
-  .contact-logo {
-    width: 20%;
-    height: 67%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .person_infos {
-    padding-left: 0px;
-  }
-
-  .person_pic {
-    padding-right: 0px;
-  }
-}
-
 @media (max-width: 480px) {
   .contact-logo {
     width: 45%;
@@ -1201,68 +1126,12 @@ table, td, th {
   }
 }
 
-/* PAGE ACTUALITES */
-
-@media screen and (max-width: 992px) {
-  .welcome-news {
-    margin-top: 55%;
-  }
-
-  .post-div {
-    flex-direction: column-reverse;
-  }
-
-  .img-div {
-    display: flex;
-  }
-
-  .image-news {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-/* PAGE NOUS SOUTENIR */
-
-@media screen and (max-width: 992px) {
-  .donation {
-    margin-top: 40%;
-  }
-
-  #haWidget {
-    margin-top: 230px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   #haWidget {
     margin-top: 230px;
   }
 }
-
-/* PAGE D'UNE NEWS */
-
-@media screen and (max-width: 992px) {
-  .news-display {
-    margin-top: 50%;
-  }
-}
-
-/* PAGE DE LOGIN */
-
-@media screen and (max-width: 992px) {
-  .login-div {
-    margin-top: 35%;
-  }
-}
-
 /* TABLEAU DE BORD ADMIN */
-
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .login-div {
-    margin-top: 20%;
-  }
-}
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .login-div {
@@ -1270,63 +1139,24 @@ table, td, th {
   }
 }
 
-@media screen and (max-width: 992px) {
+/* ESPACE ADMIN */
+
+@media screen and (min-width: 320px) and (max-width: 424px) {
   .admin_interface {
-    margin-top: 55%;
+    margin-top: 80%;
+  }
+
+  .mgmt, h1 {
+    font-size: 2rem;
+  }
+
+  .map_mgmt {
+    margin-bottom: 10%;
   }
 }
 
-/* PAGDE DE CREATION DE NEWS */
-
-@media screen and (max-width: 992px) {
-  .news-creation {
-    margin-top: 55%;
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .admin_interface {
+    margin-top: 40%;
   }
-}
-
-/* PAGE DE GESTION DE LA MAP */
-
-@media screen and (max-width: 992px) {
-  .welcome-map, .events-map {
-    margin-top: 55%;
-  }
-}
-
-/* PAGE DES COMMENTAIRES SIGNALES */
-
-@media screen and (max-width: 992px) {
-  .reported_comments {
-    margin-top: 55%;
-  }
-}
-
-/* PAGE DE GESTION DU PROGRAMME */
-
-@media screen and (max-width: 992px) {
-  .welcome-program {
-    margin-top: 55%;
-  }
-}
-
-/* PAGE CONTACT */
-
-@media screen and (max-width: 992px) {
-  #sendMessageButton {
-    left: 35%;
-    bottom: 30px;
-  }
-}
-
-/* MODAL */
-
-@media screen and (max-width: 992px) {
-  .modal {
-    left: 7%;
-  }
-}
-
-/* Mentions légales */
-
-.mentions-view {
-  margin-top: 15%;
 }
