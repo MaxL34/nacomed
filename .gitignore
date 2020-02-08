@@ -2,6 +2,7 @@
 /vendor/
 /pdf/
 /.vscode/
+/fonts/
 
 config.php
 
