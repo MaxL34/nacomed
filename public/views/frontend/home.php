@@ -125,9 +125,9 @@
                 
                 <div class="carousel">
                     <div id="owl-yaka" class="owl-carousel owl-theme">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka_exterieur2.webp" src="./img/yaka/yaka_exterieur2.webp" alt="Vue profil gauche du Yaka">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka_exterieur.webp" src="./img/yaka/yaka_exterieur.webp" alt="Vue 3/4 profil gauche du Yaka">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka2.webp" src="./img/yaka/yaka2.webp" alt="Vue sur la gouverne depuis le carré intérieur">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka-34.webp" src="./img/yaka/yaka-34.webp" alt="Vue 3/4 avant du Yaka">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka_arriere.webp" src="./img/yaka/yaka_arriere.webp" alt="Vue arrière du Yaka">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka_profil.webp" src="./img/yaka/yaka_profil.webp" alt="Seconde vue du profil gauche du Yaka">
                         <img class="owl-lazy" data-src="./img/yaka/yaka_mat.webp" src="./img/yaka/yaka_mat.webp" alt="Vue sur le mât">
                         <img class="owl-lazy" data-src="./img/yaka/yaka_carre_interieur.webp" src="./img/yaka/yaka_carre_interieur.webp" alt="Vue du carré intérieur (table et banquette)">
                         <img class="owl-lazy" data-src="./img/yaka/yaka_banette_double.webp" src="./img/yaka/yaka_banette_double.webp" alt="Vue sur la banette double">

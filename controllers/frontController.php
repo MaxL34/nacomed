@@ -41,6 +41,11 @@ function displayHome() {
     require('./public/views/frontend/home.php');
 }
 
+/* Page sciences */
+function displaySciences() {
+    require('./public/views/frontend/sciences.php');
+}
+
 /* Page contact */
 function displayContact() {
     require('./public/views/frontend/contact.php');

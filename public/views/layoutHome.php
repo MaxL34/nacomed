@@ -23,9 +23,9 @@
         <link rel="stylesheet" href="./vendor/owl.carousel/assets/owl.carousel.css">
         <link rel="stylesheet" href="./vendor/owl.carousel/assets/owl.theme.default.min.css">
         <!-- Custom stylesheet - for your changes-->
+        <link rel="stylesheet" href="./css/style.blue.css" id="theme-stylesheet">
         <link rel="stylesheet" href="./css/custom.css">
         <!-- theme stylesheet-->
-        <link rel="stylesheet" href="./css/style.blue.css" id="theme-stylesheet">
         <!-- Favicon -->
         <link rel="shortcut icon" href="./img/logo_nacomed_resized.webp">
         <!-- Open Graph Data Facebook -->

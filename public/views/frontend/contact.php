@@ -1,6 +1,6 @@
 <?php $title = 'Association Nacomed : Contact'; ?>
 <?php $meta_description = 'Contactez Nacomed : envoyez-nous un message'; ?>
-<?php $og_title = 'Page de contact de Nacomed'; ?>
+<?php $og_title = 'Contactez Nacomed'; ?>
 
 <!-- Open Graph Data Facebook -->
 <meta property="og:title" content="Association Nacomed : Contact" />

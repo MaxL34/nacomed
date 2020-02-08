@@ -19,6 +19,10 @@
                     displayOnBoard();
                 break;
 
+                case 'displaySciences':
+                    displaySciences();
+                break;
+
                 case 'displayContact':
                     displayContact();
                 break;

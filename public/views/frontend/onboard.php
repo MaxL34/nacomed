@@ -1,10 +1,10 @@
 <?php $title = 'Association Nacomed : Embarquement'; ?>
 <?php $meta_description = 'Page des informations d\'embarquement pour l\'association Nacomed'; ?>
-<?php $og_title = 'Page de votre News Nacomed'; ?>
+<?php $og_title = 'Page embarquement'; ?>
 
 <!-- Open Graph Data Facebook -->
 <meta property="og:title" content="Association Nacomed : Embarquement" />
-<meta property="og:description" content="Page des informations d'embarquement pour l'association Nacomed" />
+<meta property="og:description" content="Informations pour l'embarquement Nacomed" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.nacomed.fr/index.php?action=displayOnboard" />
 <meta property="og:image" content="https://zupimages.net/up/20/05/nxfx.png" />
@@ -19,9 +19,9 @@
 
     <div class="carousel">
         <div id="owl-yaka" class="owl-carousel owl-theme">
-            <img class="owl-lazy" data-src="./img/yaka/yaka_exterieur2.webp" src="./img/yaka/yaka_exterieur2.webp" alt="Vue profil gauche du Yaka">
-            <img class="owl-lazy" data-src="./img/yaka/yaka_exterieur.webp" src="./img/yaka/yaka_exterieur.webp" alt="Vue 3/4 profil gauche du Yaka">
-            <img class="owl-lazy" data-src="./img/yaka/yaka2.webp" src="./img/yaka/yaka2.webp" alt="Vue sur la gouverne depuis le carré intérieur">
+        <img class="owl-lazy" data-src="./img/yaka/yaka-34.webp" src="./img/yaka/yaka-34.webp" alt="Vue 3/4 avant du Yaka">
+            <img class="owl-lazy" data-src="./img/yaka/yaka_arriere.webp" src="./img/yaka/yaka_arriere.webp" alt="Vue arrière du Yaka">
+            <img class="owl-lazy" data-src="./img/yaka/yaka_profil.webp" src="./img/yaka/yaka_profil.webp" alt="Seconde vue du profil gauche du Yaka">
             <img class="owl-lazy" data-src="./img/yaka/yaka_mat.webp" src="./img/yaka/yaka_mat.webp" alt="Vue sur le mât">
             <img class="owl-lazy" data-src="./img/yaka/yaka_carre_interieur.webp" src="./img/yaka/yaka_carre_interieur.webp" alt="Vue du carré intérieur (table et banquette)">
             <img class="owl-lazy" data-src="./img/yaka/yaka_banette_double.webp" src="./img/yaka/yaka_banette_double.webp" alt="Vue sur la banette double">
@@ -139,7 +139,6 @@
                 <a class="pdf" href="./public/pdf/monter_à_bord_A_Z.pdf" target="_blank">Comment monter à bord</a>
                 <a class="pdf" href="./public/pdf/copains_des_mers.pdf" target="_blank">Les copains des mers : l'équipement</a>
                 <a class="pdf" href="./public/pdf/carte_pratique_corse.pdf" target="_blank">Carte pratique de la Corse</a>
-                <a class="pdf" href="./public/pdf/just_for_fun.pdf" target="_blank">Juste pour rire</a>
             </div>
         </div>
     </div>
