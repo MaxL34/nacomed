@@ -146,12 +146,19 @@ h2, h3 {
   margin-left: 10%;
 }
 
-.boat-info p {
-  margin-bottom: 0px;
-}
-
 .boat-info img {
   width: 64px;
+  height: 64px;
+}
+
+.promotion-div {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.promotion-p {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .sized_img {
@@ -160,7 +167,8 @@ h2, h3 {
 }
 
 .short-p {
-  margin-top: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .sensibilisation, .technologie {
@@ -275,7 +283,6 @@ h2, h3 {
 }
 
 .pic {
-  width: 121px;
   margin-bottom: 20px;
 }
 
@@ -446,15 +453,23 @@ table, td, th {
   margin-bottom: 60px;
 }
 
+#contactForm {
+  margin-bottom: 15%;
+}
+
 .conteneur {
   position: relative;
   top: 235px;
   padding-bottom: 185px;
 }
 
+.contact-btn-div {
+  display: flex;
+}
+
 #sendMessageButton {
-  position: relative;
-  left: 89%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* FIN PAGE CONTACT */
@@ -477,6 +492,14 @@ table, td, th {
 /* FIN PAGE D'ADMINISTRATION */
 
 /* PAGE DES EVENTS DE LA MAP */
+
+.welcome-map {
+  margin-top: 12%;
+}
+
+.events-map {
+  margin-top: 12%;
+}
 
 .events table {
   width: 100%;
@@ -840,6 +863,10 @@ table, td, th {
     font-size: 15px;
   }
 
+  #mainNav.onboard-nav .navbar-nav > li.nav-item > a {
+    color: #677dbd;
+  }
+
   .navbar-expand-lg .navbar-collapse {
     margin-left: 0;
   }
@@ -855,12 +882,12 @@ table, td, th {
   
   .signin-link-front, .signOut_link-front {
     font-size: 18px;
-    color: black;
+    color: #677dbd;
   }
   
   .signin-link-back, .signOut_link-back {
     font-size: 18px;
-    color: black;
+    color: #677dbd;
   }
 
   .navbar-nav {
@@ -997,8 +1024,8 @@ table, td, th {
 
   /* PAGE CONTACT */
   #sendMessageButton {
-    left: 35%;
-    bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* MODAL */
