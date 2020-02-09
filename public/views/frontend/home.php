@@ -59,9 +59,9 @@
                             <h3 class="text-uppercase">Un navire scientifique</h3>
                                 <p class="lined">&Eacute;tudier le milieu marin</p>
                         </header>
-                            <div class="boat-info"><img src="/img/icons/microscope.png" alt="microscope"><p class="about-title short-p">Accueillir des missions scientifiques</p></div>
+                            <div class="boat-info"><div><img src="/img/icons/microscope.png" alt="microscope"></div><p class="about-title short-p">Accueillir des missions scientifiques</p></div>
                             <div class="boat-info"><div><img src="/img/icons/line-graph.png" alt="graphique"></div><p class="about-title short-p">Effectuer des relevés en autonomie (plancton, microplastique, accoustique)</p></div>
-                            <div class="boat-info"><img src="/img/icons/seaweed.png" alt="plancton"><p class="about-title short-p">S'intégrer à des programmes de recherches</p></div>
+                            <div class="boat-info"><div><img src="/img/icons/seaweed.png" alt="plancton"></div><p class="about-title short-p">S'intégrer à des programmes de recherches</p></div>
                             <div class="boat-info"><div><img src="/img/icons/dolphin.png" alt="poisson"></div><p class="about-title short-p">Participer aux réseaux de sciences participatives en mer (OBSenMER, ...)</p></div>
                     </div>
                     <div class="col-lg-6 ecology-boat">
@@ -69,10 +69,10 @@
                             <h3 class="text-uppercase">Un navire écologique</h3>
                             <p class="lined">Préserver et sensibiliser</p>
                         </header>
-                            <div class="boat-info"><img src="/img/icons/compass.png" alt="boussole"><p class="about-title short-p">Naviguer et s’avitailler de manière éco-responsable</p></div>
-                            <div class="boat-info"><img src="/img/icons/atom.png" alt="atome"><p class="about-title short-p">Développer l’autonomie du navire grâce aux low-techs</p></div>
-                            <div class="boat-info"><div><img src="/img/icons/promotion.png" alt="mega-phone"></div><p class="about-title"> Mener des actions de sensibilisation auprès des plaisanciers, des plagistes, des écoliers et étudiants, et du grand public</p></div>
-                            <div class="boat-info"><img src="/img/icons/recycle-sign.png" alt="logo de recyclage"><p class="about-title short-p">Effectuer des dépollutions et nettoyages</p></div>
+                            <div class="boat-info"><div><img src="/img/icons/compass.png" alt="boussole"></div><p class="about-title short-p">Naviguer et s’avitailler de manière éco-responsable</p></div>
+                            <div class="boat-info"><div><img src="/img/icons/atom.png" alt="atome"></div><p class="about-title short-p">Développer l’autonomie du navire grâce aux low-techs</p></div>
+                            <div class="boat-info"><div class="promotion-div"><img src="/img/icons/promotion.png" alt="mega-phone"></div><div><p class="about-title promotion-p"> Mener des actions de sensibilisation auprès des plaisanciers, des plagistes, des écoliers et étudiants, et du grand public</p></div></div>
+                            <div class="boat-info recycle-div"><div><img src="/img/icons/recycle-sign.png" alt="logo de recyclage"></div><p class="about-title short-p">Effectuer des dépollutions et nettoyages</p></div>
                     </div>
                 </div>
 

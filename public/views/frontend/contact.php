@@ -67,7 +67,7 @@
                     </div>
                     <br>
                     <div id="success"></div>
-                    <div class="form-group">
+                    <div class="form-group contact-btn-div">
                         <button type="submit" class="btn btn-primary" id="sendMessageButton">Envoyer</button>
                     </div>
                 </form>
