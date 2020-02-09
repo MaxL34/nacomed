@@ -15,17 +15,13 @@
         <meta name="robots" content="all,follow">
         <!-- Bootstrap CSS-->
         <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
-        <!-- Favicon-->
-        <!-- Google fonts-->
-        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo:400,400i">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700"> -->
         <!-- OwlCarousel -->
-        <link rel="stylesheet" href="./vendor/owl.carousel/assets/owl.carousel.css">
+        <link rel="stylesheet" href="./vendor/owl.carousel/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="./vendor/owl.carousel/assets/owl.theme.default.min.css">
         <!-- Custom stylesheet - for your changes-->
-        <link rel="stylesheet" href="./css/custom.css">
+        <link rel="stylesheet" href="./css/custom.min.css">
         <!-- theme stylesheet-->
-        <link rel="stylesheet" href="./css/style.blue.css" id="theme-stylesheet">
+        <link rel="stylesheet" href="./css/style.blue.min.css" id="theme-stylesheet">
         <!-- Favicon -->
         <link rel="shortcut icon" href="./img/logo_nacomed_resized.webp">
         <!-- Open Graph Data Facebook -->
@@ -35,8 +31,6 @@
         <meta property="og:url" content="https://www.nacomed.fr" />
         <meta property="og:image" content="https://zupimages.net/up/20/05/nxfx.png" />
         <meta property="og:image:alt" content="Logo de l'association Nacomed" />
-        <!-- Lightbox CSS -->
-        <link rel="stylesheet" href="./vendor/lightbox2/css/lightbox.css">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142576167-1"></script>
         <!-- Google Tag Manager -->
@@ -120,8 +114,7 @@
         <script src="./js/signOut.js"></script>
         <script src="./js/controllers/signOut.js"></script>
         <script src="./vendor/owl.carousel/owl.carousel.min.js"></script>
-        <script src="./vendor/onepage-scroll/jquery.onepage-scroll.js"></script>
-        <script src="./vendor/lightbox2/js/lightbox.js"></script>
+        <script src="./vendor/onepage-scroll/jquery.onepage-scroll.min.js"></script>
         <script src="./js/controllers/main.js"></script>
     </body>
 </html>
