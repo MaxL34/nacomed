@@ -37,7 +37,8 @@
                     </button>
             
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                <li class="nav-item">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
                             <a class="nav-link home-link" href="../../.../../../index.php">Accueil</a>
                         </li>
                         <li class="nav-item">
