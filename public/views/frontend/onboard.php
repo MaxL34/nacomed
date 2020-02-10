@@ -222,6 +222,7 @@
 <?php require('public/views/layoutFront.php'); ?>
     
 <script src="./vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="./js/activeLinks/onboardActiveLink.js"></script>
 
 <!-- Google Map -->
 <script src="./js/controllers/onboard.js"></script>

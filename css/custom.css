@@ -71,7 +71,22 @@ h2, h3 {
 /* Slider */
 
 #mainNav .navbar-nav > li.nav-item > a:hover {
-  color: #677dbd;
+  color: #0085A1;
+}
+
+#mainNav .navbar-nav > li.nav-item > a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+#mainNav .navbar-nav > li.nav-item > a:hover:after {
+  width: 100%;
+  background: #0085A1;
 }
 
 .owl-prev {
@@ -865,6 +880,11 @@ table, td, th {
 
   #mainNav.onboard-nav .navbar-nav > li.nav-item > a {
     color: #677dbd;
+  }
+
+  #mainNav .navbar-nav > li.nav-item > a:hover:after {
+    width: 30%;
+    background: #0085A1;
   }
 
   .navbar-expand-lg .navbar-collapse {

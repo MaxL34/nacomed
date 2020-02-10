@@ -219,3 +219,6 @@
     
 <?php $content = ob_get_clean(); ?>
 <?php require('public/views/layoutHome.php'); ?>
+
+<!-- JavaScript files -->
+<script src="./js/activeLinks/homeActiveLink.js"></script>

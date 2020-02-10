@@ -37,21 +37,17 @@
                     </button>
             
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../.../../../index.php">Accueil</a>
+                <li class="nav-item">
+                            <a class="nav-link home-link" href="../../.../../../index.php">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../../../index.php?action=displayOnboard">Embarquement</a>
+                            <a class="nav-link onboard-link" href="../../../index.php?action=displayOnboard">Embarquement</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.php?action=displaySciences">Sciences</a>
+                            <a class="nav-link sc-link" href="./index.php?action=displaySciences">Sciences</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link support-link" href="../../../index.php?action=displaySupport">Nous soutenir</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../../index.php?action=displayContact">Contact</a>
+                            <a class="nav-link contact-link" href="../../../index.php?action=displayContact">Contact</a>
                         </li>
                         <?php
                             if (isset($_SESSION['user'])) {

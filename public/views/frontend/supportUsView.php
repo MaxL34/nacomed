@@ -21,4 +21,7 @@
 <iframe class="helloForm" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/nacomed/formulaires/1/widget" style="width:100%;height:750px;border:none;" onload="window.scroll(0, this.offsetTop)"></iframe>
 
 <?php $content = ob_get_clean(); ?>
-<?php require('public/views/layoutFront.php'); ?> 
+<?php require('public/views/layoutFront.php'); ?>
+
+<!-- JavaScript files -->
+<script src="./js/activeLinks/supportActiveLink.js"></script>

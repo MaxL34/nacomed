@@ -84,3 +84,6 @@
 
 <?php $content = ob_get_clean(); ?>
 <?php require('public/views/layoutFront.php'); ?>
+
+<!-- JavaScript files -->
+<script src="./js/activeLinks/sciencesActiveLink.js"></script>

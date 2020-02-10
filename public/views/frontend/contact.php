@@ -81,4 +81,5 @@
 
 <!-- JavaScript files-->
 <script src="./js/jqBootstrapValidation.js"></script>
+<script src="./js/activeLinks/contactActiveLink.js"></script>
 <script src="./js/contact_me.js"></script>
