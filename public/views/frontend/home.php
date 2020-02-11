@@ -209,7 +209,6 @@
             <div class="footer-copyright text-center py-3">© 2019 Copyright :
                 <a href="./index.php?action=displayContact"> NACOMED</a>
                 <a href="./index.php?action=displayMentions">Mentions légales</a></br>
-                Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
             </div>
             <!-- Copyright -->
         </footer>
