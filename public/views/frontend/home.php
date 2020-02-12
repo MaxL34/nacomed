@@ -71,7 +71,7 @@
                         </header>
                             <div class="boat-info"><div><img src="/img/icons/compass.png" alt="boussole"></div><p class="about-title short-p">Naviguer et s’avitailler de manière éco-responsable</p></div>
                             <div class="boat-info"><div><img src="/img/icons/atom.png" alt="atome"></div><p class="about-title short-p">Développer l’autonomie du navire grâce aux low-techs</p></div>
-                            <div class="boat-info"><div class="promotion-div"><img src="/img/icons/promotion.png" alt="mega-phone"></div><div><p class="about-title promotion-p"> Mener des actions de sensibilisation auprès des plaisanciers, des plagistes, des écoliers et étudiants, et du grand public</p></div></div>
+                            <div class="boat-info"><div class="promotion-div"><img src="/img/icons/promotion.png" alt="mega-phone"><div class="promo-p-div"><p class="about-title promotion-p"> Mener des actions de sensibilisation auprès des plaisanciers, des plagistes, des écoliers et étudiants, et du grand public</p></div></div></div>
                             <div class="boat-info recycle-div"><div><img src="/img/icons/recycle-sign.png" alt="logo de recyclage"></div><p class="about-title short-p">Effectuer des dépollutions et nettoyages</p></div>
                     </div>
                 </div>
@@ -131,7 +131,6 @@
                         <img class="owl-lazy" data-src="./img/yaka/yaka_mat.webp" src="./img/yaka/yaka_mat.webp" alt="Vue sur le mât">
                         <img class="owl-lazy" data-src="./img/yaka/yaka_carre_interieur.webp" src="./img/yaka/yaka_carre_interieur.webp" alt="Vue du carré intérieur (table et banquette)">
                         <img class="owl-lazy" data-src="./img/yaka/yaka_banette_double.webp" src="./img/yaka/yaka_banette_double.webp" alt="Vue sur la banette double">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka_banettes_superposees.webp" src="./img/yaka/yaka_banette_double.webp" alt="Vue sur les banettes superposées">
                     </div>
                 </div>   
             </div>

@@ -5,7 +5,7 @@
 
 <div class="container login-div">
     <div class="row mgmt">
-        <div class="col-lg-12 text-center">
+        <div class="col-lg-12 text-center login-div-text">
             <header>
                 <h1>Espace de connexion</h1>
             </header>

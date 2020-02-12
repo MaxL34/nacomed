@@ -25,7 +25,6 @@
             <img class="owl-lazy" data-src="./img/yaka/yaka_mat.webp" src="./img/yaka/yaka_mat.webp" alt="Vue sur le mât">
             <img class="owl-lazy" data-src="./img/yaka/yaka_carre_interieur.webp" src="./img/yaka/yaka_carre_interieur.webp" alt="Vue du carré intérieur (table et banquette)">
             <img class="owl-lazy" data-src="./img/yaka/yaka_banette_double.webp" src="./img/yaka/yaka_banette_double.webp" alt="Vue sur la banette double">
-            <img class="owl-lazy" data-src="./img/yaka/yaka_banettes_superposees.webp" src="./img/yaka/yaka_banette_double.webp" alt="Vue sur les banettes superposées">
         </div>
     </div>
 
@@ -63,7 +62,7 @@
         <div class="row eco-vol-text">
             <div class="col-lg-12">
                 <header class="text-center">
-                    <h2>Le mot du Captain :<h2>
+                    <h2>Le mot du Capitaine<h2>
                 </header>
                 <p class="font-italic text-center">“Encore une fois, ce n’est pas une croisière apéro glandouille qui vous est proposée !<br><br>
                     La vocation du navire étant scientifique nous participerons à différentes missions très variées qui seront définies au fur et à mesure.<br>

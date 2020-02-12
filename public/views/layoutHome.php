@@ -25,7 +25,7 @@
         <!-- Favicon -->
         <link rel="shortcut icon" href="./img/logo_nacomed_resized.webp">
         <!-- Open Graph Data Facebook -->
-        <meta property="og:title" content="Page d'accueil de l'association Nacomed" />
+        <meta property="og:title" content="Bienvenue sur le site de Nacomed" />
         <meta property="og:description" content="<?= $og_title; ?>" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.nacomed.fr" />
@@ -55,17 +55,13 @@
     <!-- End Google Tag Manager (noscript) -->
     
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top home-navbar" id="mainNav">
             <div class="container home-navbar">
                 <a class="logo navbar-brand" href="./index.php"><img class="logo-nacomed" src="./img/logo_nacomed.webp" alt="logo de nacomed" /></a>
-                    <button class="menu_btn navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        Menu
-                        <i class="fas fa-bars"></i>
-                    </button>
           
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link home-link" href="../../.../../../index.php">Accueil</a>
                         </li>
                         <li class="nav-item">
@@ -90,13 +86,18 @@
                                 echo '<div class="sign-links">
                                         <li class="nav-item admin-link"><a class="signin-link-home" href="./index.php?action=displayAdmin">Admin</a></li>
                                         <li class="nav-item logout"><a id="signOut_link" class="signOut_link-home" href="./index.php?action=signOut">Signout</a></li>
-                                      </div>';
+                                        </div>';
                             } else {
                                 echo '<li class="nav-item login"><a class="nav-link" href="./index.php?action=login">Admin</a></li>';
                             }
                         ?>
                     </ul>
                 </div>
+
+                <button class="menu_btn navbar-toggler navbar-toggler-right" id="home_menu_btn" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
+                        <i class="fas fa-bars"></i>
+                </button>
             </div>
         </nav>
 
