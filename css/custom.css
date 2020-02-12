@@ -135,6 +135,10 @@ h2, h3 {
 
 /*SECTION 2 : PRESENTATION */
 
+.about_div {
+  max-width: 90%;
+}
+
 .about-logo {
   position: relative;
   top: 20%;
@@ -158,7 +162,7 @@ h2, h3 {
 .boat-info {
   display: flex;
   margin-bottom: 15px;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 
 .boat-info img {
@@ -167,6 +171,15 @@ h2, h3 {
 }
 
 .promotion-div {
+  display: flex;
+}
+
+.promotion-div img {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.promo-p-div {
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -492,7 +505,7 @@ table, td, th {
 /* PAGE D'ADMINISTRATION */
 
 .admin_interface, .news-creation, .login-div {
-  margin-top: 10%;
+  margin-top: 15%;
   margin-bottom: 5%;
 }
 
@@ -638,6 +651,7 @@ table, td, th {
 .home-navbar, .nav-div {
   margin-left: auto;
   margin-right: auto;
+  max-width: 100%;
 }
 
 .support-link {
@@ -646,8 +660,7 @@ table, td, th {
 
 #mainNav {
   position: absolute;
-  border-bottom: 1px solid #e9ecef;
-  background-color: white;
+  background-color: transparent;
 }
   
  #mainNav .navbar-brand {
@@ -660,7 +673,7 @@ table, td, th {
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
-  color: #677dbd;
+  /*color: #677dbd;*/
 }
   
   #mainNav .navbar-nav > li.nav-item > a {
@@ -816,6 +829,7 @@ table, td, th {
   .logo-nacomed {
     position: relative;
     right: 12%;
+    width: 145px;
   }
 
   #navbarResponsive {
@@ -846,11 +860,13 @@ table, td, th {
 @media screen and (min-width: 320px) and (max-width: 424px) {
   .hero {
     min-height: 43vh;
-    top: 162px;
+  }
+
+  #home1 {
+    padding-bottom: 0px;
   }
 
   #captain-speech {
-    padding-top: 40%;
     padding-bottom: 0;
   }
 }
@@ -858,11 +874,9 @@ table, td, th {
 @media screen and (min-width: 425px) and (max-width: 767px) {
   .hero {
     min-height: 56vw;
-    top: 162px;
   }
 
   #captain-speech {
-    padding-top: 40%;
     padding-bottom: 0;
   }
 }
@@ -874,6 +888,13 @@ table, td, th {
 
   /* PAGE D'ACCUEIL */
   /* MENU DE NAVIGATION */
+
+  .navbar-collapse, .collapse, .show {
+    background-color: white;
+    max-width: 45%;
+    border-radius: 60px;
+  }
+
   #mainNav .navbar-nav > li.nav-item > a {
     font-size: 15px;
   }
@@ -888,7 +909,8 @@ table, td, th {
   }
 
   .navbar-expand-lg .navbar-collapse {
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .sign-links {
@@ -932,6 +954,15 @@ table, td, th {
   .menu_btn {
     position: relative;
     margin-left: auto;
+  }
+
+  #home_menu_btn {
+    border: 1px solid white;
+    color: white;
+  }
+
+  #home_front_menu_btn {
+    color: #677dbd;
   }
 
   .login {
@@ -1055,9 +1086,55 @@ table, td, th {
 }
 /* FIN MAX-WIDTH: 992PX */
 
-@media screen and (min-width: 320px) and (max-width: 992px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .logo-nacomed {
+    width: 80px;
+  }
+
+  .navbar-collapse, .collapse, .show {
+    background-color: white;
+    max-width: 45%;
+    border-radius: 30px;
+  }
+
+  #home_menu_btn {
+    border: 1px solid white;
+    color: white;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #home_front_menu_btn {
+    color: #677dbd;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .logo-nacomed {
     width: 135px;
+  }
+
+  .navbar-collapse, .collapse, .show {
+    background-color: white;
+    max-width: 45%;
+    border-radius: 60px;
+  }
+
+  #home_menu_btn {
+    border: 1px solid white;
+    color: white;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #home_front_menu_btn {
+    color: #677dbd;
   }
 }
 
@@ -1067,6 +1144,19 @@ table, td, th {
   .eco-volunteer {
     margin-top: 280px;
   }
+
+  .logo, .navbar-brand {
+    margin-right: 0px;
+  }
+
+  #mainNav .navbar-nav > li.nav-item > a {
+    font-size: 10px;
+  }
+
+  .navbar-collapse, .collapse, .show {
+    max-width: 40%;
+  }
+
 }
 
 @media screen and (min-width: 376px) and (max-width: 992px) {
@@ -1085,9 +1175,13 @@ table, td, th {
 
 /*BOUTON HELLOASSO */
 
-@media screen and (min-width: 320px) and (max-width : 424px) {
+@media screen and (min-width: 320px) and (max-width : 425px) {
   #haWidget {
     margin-top: 310px;
+  }
+
+  .boat-info {
+    margin-left: 0%;
   }
 }
 
@@ -1095,11 +1189,20 @@ table, td, th {
   #haWidget {
     margin-top: 290px;
   }
+
+  .boat-info {
+    margin-left: 0%;
+  }
+
 }
 
 @media screen and (min-width: 768px) and (max-width : 1023px) {
   #haWidget {
     margin-top: 280px;
+  }
+
+  .boat-info {
+    margin-left: 15%;
   }
 }
 
@@ -1175,7 +1278,17 @@ table, td, th {
 @media screen and (min-width: 320px) {
   .welcome {
     position: relative;
-    bottom: 50px;
+    bottom: 15px;
+  }
+
+  .login-div-text, .mgmt h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .login-div, .admin_interface {
+    margin-top: 50%;
   }
 }
 
@@ -1189,7 +1302,11 @@ table, td, th {
 @media screen and (min-width: 425px) {
   .welcome {
     position: relative;
-    bottom: 20px;
+    bottom: 0px;
+  }
+
+  .login-div-text h1 {
+    font-size: 35px;
   }
 }
 
@@ -1200,15 +1317,27 @@ table, td, th {
   }
 
   #captain-speech {
-    margin-top: 15%;
     padding-bottom: 0;
+  }
+
+  .login-div, .admin_interface {
+    margin-top: 30%;
+  }
+
+  .login-div-text, .mgmt h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .login-div-text, .admin_interface h1 {
+    font-size: 45px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .hero {
-    top: 160px;
-    min-height: 50vh;
+    min-height: 55vw;
   }
 
   .captain-speech {
@@ -1223,14 +1352,30 @@ table, td, th {
     top: 66px;
   }
 
+  .admin_interface {
+    margin-top: 25%;
+  }
+
   #home1 {
     min-height: 57vw;
+  }
+
+  .logo-nacomed {
+    width: 145px;
   }
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1799px) {
   .hero {
     min-height: 100vh;
+  }
+  
+  .admin_interface {
+    margin-top: 25%;
+  }
+
+  .login-div {
+    margin-top: 15%;
   }
 }
 
@@ -1326,7 +1471,7 @@ table, td, th {
   .person_pic {
     margin-right: auto;
     margin-left: auto;
-    width: 200px;
+    width: 250px;
   }
 
   .contact-logo {
@@ -1350,22 +1495,8 @@ table, td, th {
 /* ESPACE ADMIN */
 
 @media screen and (min-width: 320px) and (max-width: 424px) {
-  .admin_interface {
-    margin-top: 300px;
-  }
-
-  .mgmt, h1 {
-    font-size: 2rem;
-  }
-
   .map_mgmt {
     margin-bottom: 10%;
-  }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1440px) {
-  .admin_interface {
-    margin-top: 30%;
   }
 }
 
