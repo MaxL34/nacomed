@@ -125,12 +125,12 @@
                 
                 <div class="carousel">
                     <div id="owl-yaka" class="owl-carousel owl-theme">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka-34.webp" src="./img/yaka/yaka-34.webp" alt="Vue 3/4 avant du Yaka">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka_arriere.webp" src="./img/yaka/yaka_arriere.webp" alt="Vue arrière du Yaka">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka_profil.webp" src="./img/yaka/yaka_profil.webp" alt="Seconde vue du profil gauche du Yaka">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka_mat.webp" src="./img/yaka/yaka_mat.webp" alt="Vue sur le mât">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka_carre_interieur.webp" src="./img/yaka/yaka_carre_interieur.webp" alt="Vue du carré intérieur (table et banquette)">
-                        <img class="owl-lazy" data-src="./img/yaka/yaka_banette_double.webp" src="./img/yaka/yaka_banette_double.webp" alt="Vue sur la banette double">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka-34.jpg" src="./img/yaka/yaka-34.jpg" alt="Vue 3/4 avant du Yaka">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka_arriere.jpg" src="./img/yaka/yaka_arriere.jpg" alt="Vue arrière du Yaka">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka_profil.jpg" src="./img/yaka/yaka_profil.jpg" alt="Seconde vue du profil gauche du Yaka">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka_mat.jpg" src="./img/yaka/yaka_mat.jpg" alt="Vue sur le mât">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka_carre_interieur.jpg" src="./img/yaka/yaka_carre_interieur.jpg" alt="Vue du carré intérieur (table et banquette)">
+                        <img class="owl-lazy" data-src="./img/yaka/yaka_banette_double.jpg" src="./img/yaka/yaka_banette_double.jpg" alt="Vue sur la banette double">
                     </div>
                 </div>   
             </div>
@@ -146,19 +146,19 @@
                 <div class="team-content">
                     <div class="row team-row">
                         <div class="text-center person_pic">
-                            <img  class="pic" src="./img/Team/cyrille.webp" alt="portrait de Cyrille Lorenzi, fondateur de nacomed"><br>
+                            <img  class="pic" src="./img/Team/cyrille.png" alt="portrait de Cyrille Lorenzi, fondateur de nacomed"><br>
                             <span>Cyrille Lorenzi</span><br>
                             <span>Fondateur et Capitaine</span><br>
                         </div>
 
                         <div class="text-center person_pic">
-                            <img class="pic" src="./img/Team/pauline.webp" alt="portrait de Pauline Panchairi, développement projets scientifiques"><br>
+                            <img class="pic" src="./img/Team/pauline.png" alt="portrait de Pauline Panchairi, développement projets scientifiques"><br>
                             <span>Pauline Panchairi</span><br>
                             <span>Développement projets scientifiques</span><br>
                         </div>
 
                         <div class="text-center person_pic">
-                            <img class="pic" src="./img/Team/jean.webp" alt="portrait de Jean Reynaud, développement projets scientifiques"><br>
+                            <img class="pic" src="./img/Team/jean.png" alt="portrait de Jean Reynaud, développement projets scientifiques"><br>
                             <span>Jean Reynaud</span><br>
                             <span>Développement projets scientifiques</span><br>
                         </div>
@@ -166,13 +166,13 @@
 
                     <div class="row team-row2">
                         <div class="text-center person_pic">
-                            <img class="pic" src="./img/Team/aude.webp" alt="portrait d'Aude Fromy, gestion de la logistique"><br>
+                            <img class="pic" src="./img/Team/aude.png" alt="portrait d'Aude Fromy, gestion de la logistique"><br>
                             <span>Aude Fromy</span><br>
                             <span>Gestion de la logistique</span><br>
                         </div>
 
                         <div class="text-center person_pic">
-                            <img class="pic" src="./img/Team/max.webp" alt="portrait de Maxime Lauvergeat, développement web"><br>
+                            <img class="pic" src="./img/Team/max.png" alt="portrait de Maxime Lauvergeat, développement web"><br>
                             <span>Maxime Lauvergeat</span><br>
                             <span>Développement du site web</span><br>
                         </div>

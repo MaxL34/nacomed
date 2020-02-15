@@ -19,12 +19,12 @@
 
     <div class="carousel">
         <div id="owl-yaka" class="owl-carousel owl-theme">
-        <img class="owl-lazy" data-src="./img/yaka/yaka-34.webp" src="./img/yaka/yaka-34.webp" alt="Vue 3/4 avant du Yaka">
-            <img class="owl-lazy" data-src="./img/yaka/yaka_arriere.webp" src="./img/yaka/yaka_arriere.webp" alt="Vue arrière du Yaka">
-            <img class="owl-lazy" data-src="./img/yaka/yaka_profil.webp" src="./img/yaka/yaka_profil.webp" alt="Seconde vue du profil gauche du Yaka">
-            <img class="owl-lazy" data-src="./img/yaka/yaka_mat.webp" src="./img/yaka/yaka_mat.webp" alt="Vue sur le mât">
-            <img class="owl-lazy" data-src="./img/yaka/yaka_carre_interieur.webp" src="./img/yaka/yaka_carre_interieur.webp" alt="Vue du carré intérieur (table et banquette)">
-            <img class="owl-lazy" data-src="./img/yaka/yaka_banette_double.webp" src="./img/yaka/yaka_banette_double.webp" alt="Vue sur la banette double">
+            <img class="owl-lazy" data-src="./img/yaka/yaka-34.jpg" src="./img/yaka/yaka-34.jpg" alt="Vue 3/4 avant du Yaka">
+            <img class="owl-lazy" data-src="./img/yaka/yaka_arriere.jpg" src="./img/yaka/yaka_arriere.jpg" alt="Vue arrière du Yaka">
+            <img class="owl-lazy" data-src="./img/yaka/yaka_profil.jpg" src="./img/yaka/yaka_profil.jpg" alt="Seconde vue du profil gauche du Yaka">
+            <img class="owl-lazy" data-src="./img/yaka/yaka_mat.jpg" src="./img/yaka/yaka_mat.jpg" alt="Vue sur le mât">
+            <img class="owl-lazy" data-src="./img/yaka/yaka_carre_interieur.jpg" src="./img/yaka/yaka_carre_interieur.jpg" alt="Vue du carré intérieur (table et banquette)">
+            <img class="owl-lazy" data-src="./img/yaka/yaka_banette_double.jpg" src="./img/yaka/yaka_banette_double.jpg" alt="Vue sur la banette double">
         </div>
     </div>
 

@@ -19,7 +19,7 @@ section {
 }
 
 .hero {
-  background-image: url(../img/background_home.webp);
+  background-image: url(../img/background_home.jpg);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;

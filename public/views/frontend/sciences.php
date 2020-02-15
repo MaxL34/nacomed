@@ -73,7 +73,7 @@
                     <p class="sc-pdf-text text-center">Retrouvez ci-joint les projets en détails</p>
                     <div class="prog-pdf-div">
                         <a class="sc-prog-link" href="./public/pdf/prog_sc_2020_mail.pdf" target="_blank">
-                            <img class="sc-prog-img" src="../../img/prog-sc-2020-resized.webp"><br>
+                            <img class="sc-prog-img" src="../../img/prog-sc-2020-resized.png"><br>
                             <span class="link-help">(cliquez sur l'image)</span>
                         </a>
                     </div>

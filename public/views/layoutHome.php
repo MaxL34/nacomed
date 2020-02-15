@@ -57,7 +57,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top home-navbar" id="mainNav">
             <div class="container home-navbar">
-                <a class="logo navbar-brand" href="./index.php"><img class="logo-nacomed" src="./img/logo_nacomed.webp" alt="logo de nacomed" /></a>
+                <a class="logo navbar-brand" href="./index.php"><img class="logo-nacomed" src="./img/logo_nacomed.png" alt="logo de nacomed" /></a>
           
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
